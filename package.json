@@ -18,6 +18,7 @@
     "url": "https://github.com/VYevheniia/parcel-project-mimino-team4/issues"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001449",
     "modern-normalize": "^1.1.0",
     "swiper": "^8.4.6"
   },
