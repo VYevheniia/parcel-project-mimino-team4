@@ -30,7 +30,8 @@
     color: $color-text-gray;
 
     &--first {
-      margin-right: 126px;
+      //   margin-right: 126px;
+      max-width: 258px;
       margin-bottom: 28px;
     }
 
@@ -58,7 +59,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .tablet-flex {
+  .about-flex {
     display: flex;
     align-items: center;
   }
@@ -71,11 +72,17 @@
     }
 
     &__mimino {
+      margin-bottom: 24px;
       font-size: 64px;
       line-height: 1.078;
     }
     &__paragraph {
       font-size: 16px;
+      margin: 0;
+
+      &--first {
+        max-width: 439px;
+      }
 
       &--second {
         max-width: 312px;
@@ -93,5 +100,20 @@
         margin-right: 48px;
       }
     }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about__paragraph {
+    &--first {
+      max-width: 518px;
+      margin-right: 37px;
+    }
+    &--second {
+      margin-right: 32px;
+    }
+  }
+  .about__img {
+    min-width: 460px;
   }
 }
