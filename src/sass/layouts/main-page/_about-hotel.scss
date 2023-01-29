@@ -109,19 +109,72 @@
     display: block;
     max-width: 100%;
     margin-left: auto;
+
     @media(min-width:1024px){
-        position: absolute;
-             left: 50%;
-             top:-32px;
-             
-     }
-     
-     @media(min-width:1280px){
-         background-size: contain;
-     }
-     }
+   position: absolute;
+        left: 50%;
+        top:-32px;
+        margin-bottom: 0;
+        
 }
 
+@media(min-width:1280px){
+    background-size: contain;
+}
+}}
+
+.luxe-room__button{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px 37px;
+    background-color: $black;
+    
+    @media(min-width:1024px){
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+
+}
+.luxe-room__link{
+    
+    max-width: 235px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 14px 64px;
+    height: 48px;
+    color: $accent-yellow;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    border: 2px solid $white;
+    border-radius: 25px;
+    text-decoration: none;
+    background-color: $black;
+
+
+  transition-property: background-color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus{
+    background-color: $white;
+    border-color: $accent-yellow;
+  }
+
+  @media(min-width:1024px){
+    margin-top: 89px;
+    margin-right: 0;
+    margin-left: auto;
+}
+}
 
 
 
@@ -256,3 +309,56 @@
 }
 }}
 
+.room-for-two__button{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px 37px;
+    background-color: $black;
+
+    @media(min-width:1024px){
+        margin-right: 0;
+        margin-left: auto;
+        
+    }
+    
+
+
+
+}
+.room-for-two__link{
+    max-width: 235px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 14px 64px;
+    height: 48px;
+    color: $accent-yellow;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    border: 2px solid $white;
+    border-radius: 25px;
+    text-decoration: none;
+    background-color: $black;
+
+
+  transition-property: background-color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus{
+    background-color: $white;
+    border-color: $accent-yellow;
+  }
+  @media(min-width:1024px){
+    margin-top: 89px;
+    margin-right: 0;
+    margin-left: auto;
+}
+}
