@@ -1,9 +1,58 @@
 .contacts {
   background-color: #fffdee;
+  padding-top: 36px;
+  padding-bottom: 32px;
+  position: relative;
 
   &__logo {
     font-family: 'Film P3', sans-serif;
-    text-transform: capitalize;
+    text-transform: Uppercase;
+    color: #494848;
+    margin-bottom: 12px;
+  }
+
+  &__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: #7a7a7a;
+    margin-bottom: 16px;
+  }
+
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__description {
+    color: #c79002;
+  }
+
+  &__icon {
+  }
+
+  &__box {
+    border: 0.5px solid #f3c653;
+    border-radius: 2px;
+    background-color: #ffffff;
+    display: flex;
+    gap: 8px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  &__box--restaurant {
+    width: 144px;
+  }
+
+  &__box--hotel,
+  &__box--location {
+    width: 260px;
+    @media screen and (min-width: 414px) {
+      width: 264px;
+    }
   }
 
   &__map {
