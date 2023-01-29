@@ -1,0 +1,44 @@
+.details-rest{
+    background-color:rgba(0, 0, 0, 0.65);
+    padding: 118px 0;
+    max-width: 1280px;
+    width: 100%;
+    height: 735px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    background-image: url(/src/images/pexels-kheng-tang-3873951\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+.desk{
+    margin-left: 140px;
+    max-width: 414px;
+
+    &__title{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+
+        color: &white;
+        text-align: left;
+        margin-bottom: 20px;
+        
+    }
+
+    &__text{
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+
+        color: &gray-second;
+        text-align: left;
+        // margin-bottom: 20px;
+        max-width: 100%;
+    }
+}
