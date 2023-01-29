@@ -25,12 +25,21 @@
 
   &__description {
     color: $brown;
+
     @media screen and (min-width: $mobile) {
       margin-bottom: 8px;
     }
   }
 
   &__icon {
+    fill: $brown;
+  }
+
+  &__text {
+    color: $color-text-logo;
+    @media screen and (min-width: $desktop) {
+      color: $gray-third;
+    }
   }
 
   &__box {
