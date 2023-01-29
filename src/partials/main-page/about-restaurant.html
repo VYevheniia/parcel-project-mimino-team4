@@ -1,15 +1,18 @@
-<section class="section-about">
+<section class="about">
   <div class="container">
     <h2 class="visually-hidden">Ресторан</h2>
-    <p class="section-about__text">Amet minim mollit non</p>
-    <p class="section-about__mimino">MIMIHO</p>
-    <ul>
-      <li>
-        <p class="section-about__paragraph">
+    <div class="tablet-flex">
+      <div class="tablet-container">
+        <p class="about__text">Amet minim mollit non</p>
+        <p class="about__mimino">MIMIHO</p>
+
+        <p class="about__paragraph about__paragraph--first">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
+      </div>
+      <div class="img-container">
         <picture
           ><source
             srcset="
@@ -18,31 +21,34 @@
             "
             media="(min-width:414px)"
           />
-          <img src="./images/about-restaurant/restaurant-interior-mobile.jpg" />
-        </picture>
-      </li>
-      <li>
-        <picture
-          ><source
-            srcset="
-              ./images/about-restaurant/restaurant-chairs-mobile.jpg    1x,
-              ./images/about-restaurant/restaurant-chairs-mobile@2x.jpg 2x
-            "
-            media="(min-width:414px)"
-          />
           <img
-            src="./images/about-restaurant/restaurant-chairs-mobile.jpg"
-            alt=""
+            src="./images/about-restaurant/restaurant-interior-mobile.jpg"
+            class="about__img about__img--first"
           />
         </picture>
-        <p>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-      </li>
-    </ul>
+      </div>
+    </div>
 
+    <div class="about-container">
+      <picture
+        ><source
+          srcset="
+            ./images/about-restaurant/restaurant-chairs-mobile.jpg    1x,
+            ./images/about-restaurant/restaurant-chairs-mobile@2x.jpg 2x
+          "
+          media="(min-width:414px)"
+        />
+        <img
+          src="./images/about-restaurant/restaurant-chairs-mobile.jpg"
+          class="about__img about__img--second"
+        />
+      </picture>
+      <p class="about__paragraph about__paragraph--second">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
     <div class="swiper">
       <ul class="swiper-wrapper">
         <li class="swiper-slide">
