@@ -25,6 +25,9 @@
 
   &__description {
     color: #c79002;
+    @media screen and (min-width: 414px) {
+      margin-bottom: 8px;
+    }
   }
 
   &__icon {
@@ -56,7 +59,7 @@
   }
 
   &__map {
-    background: #000000;
+    background: black;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
   }
