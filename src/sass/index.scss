@@ -1,3 +1,8 @@
+// utils
+
+@import './utils/main';
+@import './utils/variables';
+
 // base
 
 @import './base/main';
@@ -15,7 +20,3 @@
 @import './layouts/rest-page/main';
 @import './layouts/room-page/main';
 @import './layouts/footer';
-
-// utils
-
-@import './utils/main';
