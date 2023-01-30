@@ -1,0 +1,155 @@
+.room-for-three{
+   background-color: $dark-lemon ;
+   
+   @media (max-width: 1023px){
+    padding: 32px 15px;
+   }
+   @include tablet {
+    padding-top: 66px;
+  }
+   
+  
+
+
+     //display: flex;
+    //padding-left: 85px;
+}
+
+.room-for-three__information{
+ margin-bottom: 32px;
+
+
+}
+
+
+
+.room-for-three_text{
+color:$gray-first;
+font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 1.5;
+
+display:flex;
+justify-content: flex-end;
+
+@include tablet {
+    margin-bottom: 4px;
+    font-size: 32px;
+    line-height: 1.1;
+  }
+}
+
+.room-for-three__logo{
+color:$color-text-logo ;
+font-family: 'Film P3';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 1.0;
+letter-spacing: 0.3em;
+
+display:flex;
+justify-content: flex-end;
+margin-bottom: 32px;
+
+@include tablet {
+    font-size: 64px;
+    margin-bottom: 62px;
+  }
+
+//margin-top: 4px;
+//margin-bottom: 75px;
+}
+
+.logo--letter-spacing{
+letter-spacing: normal;
+}
+
+.room-for-three__title{
+color: $black;
+font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 700;
+letter-spacing: 0.05em;
+font-size: 24px;
+line-height: 1.1;
+
+
+display:flex;
+justify-content: flex-end;
+margin-bottom: 12px;
+
+@include tablet {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+
+
+
+
+//font-size: 36px;
+//margin-left: 45px;
+//margin-bottom: 24px;
+
+}
+
+.room-for-three__description{
+color: $color-text-gray;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+
+
+width: 242px;
+display:block;
+justify-content: center;
+margin-left: 83px;
+
+@media (max-width: 413px){
+    margin-left: auto;
+}
+@include tablet {
+    font-size: 16px;
+    width: 400px;
+    margin-right: 67px;
+  }
+
+
+
+
+
+
+//font-weight: 700;
+//font-size: 16px;
+
+//width: 400px;
+
+}
+
+.room-for-three_tumb{
+    
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    width: 244px;
+    //margin-top: -33px;
+    
+}
+
+.room-for-three__button{
+   text-align: center;
+}
+
+.button-details{
+    margin-top: 20px;
+    display: inline;
+}
+
+.button-price{
+    margin-top: 16px;
+    display: inline;
+}
