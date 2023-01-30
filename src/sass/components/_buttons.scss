@@ -1,8 +1,13 @@
+$accent-yellow: #f3c653;
+$white: #ffffff;
+$black: #000000;
+$background-button: rgba(0, 0, 0, 0.4);
+
 .button{
     display: block;
     padding: 14px auto;
     height: 48px;
-    color: var(accent-yellow);
+    color: $accent-yellow;
     cursor: pointer;
     font-family: 'Montserrat';
     font-style: normal;
@@ -10,7 +15,7 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    border: 2px solid var(white);
+    border: 2px solid $white;
     border-radius: 25px;
  
     transition-property: background-color, border-color;
@@ -19,30 +24,31 @@
 
     &:hover,
     &:focus{
-    background-color: var(white);
-    border-color: var(accent-yellow);
+    background-color: $white;
+    border-color: $accent-yellow;
 }
 &__black{
     width: 236px;
-    background-color:var(black);
+    background-color:$black;
 }
 &__gray232{
     width: 232px;
-    background-color:var(background-button);
+    background-color:$background-button;
 }
 &__gray243{
     width: 243px;
-    background-color:var(background-button);
+    background-color:$background-button;
 }
 &__gray254{
     width: 254px;
-    background-color:var(background-button);
+    background-color:$background-button;
 }
 &__gray258{
     width: 258px;
-    background-color:var(background-button);
+    background-color:$background-button;
 }
 }
+
 
 
 .button-reservation{
@@ -50,15 +56,15 @@
     padding: 18px auto;
     width: 434px;
     height: 64px;
-    color: var(white);
+    color: $white;
     cursor: pointer;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 1.2;
-    background-color:var(black);
-    border: 1px solid var(accent-yellow);
+    background-color:$black;
+    border: 1px solid $accent-yellow;
     border-radius: 25px;
  
     transition-property: background-color, border-color, color;
@@ -67,9 +73,9 @@
 
     &:hover,
     &:focus{
-    color:  #000000;
-    background-color:  var(accent-yellow);
-    border-color: var(accent-yellow);
+    color:  $black;
+    background-color: $accent-yellow;
+    border-color: $accent-yellow;
 }
 &__mobile{
     width: 384px;
