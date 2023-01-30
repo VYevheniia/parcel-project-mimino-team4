@@ -63,6 +63,15 @@
   align-items: center;
 }
 
+.slider-container {
+  display: flex;
+}
+
+.slider-img {
+  margin-left: 69px;
+  margin-right: 25px;
+}
+
 @media screen and (min-width: 1024px) {
   .about-flex {
     display: flex;
