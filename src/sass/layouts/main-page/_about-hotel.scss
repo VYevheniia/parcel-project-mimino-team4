@@ -1,208 +1,38 @@
 .luxe-room{
-    background-color: #FFFDEE;
-    padding-top: 32px;
-    padding-bottom:32px ;
     @media(min-width:1024px){
-    padding-top: 62px;
-    padding-bottom:40px;
-    position: relative;
+        position: relative;
     }
-    @media(min-width:1280px){
-        padding-top: 72px;
-    }
-
-
-&__desc{
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: #B4B4B4;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.15;
-    @media(min-width:1024px){
-    margin-bottom: 4px;
-    font-size: 32px;
-    }
-
-
 }
-
-&__title{
-    font-family: 'Times New Roman', sans-serif ;
-    margin-top: 32px;
-        margin-bottom: 12px;
-        color: #000000;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 1.17;
-        letter-spacing: 0.05;
-        text-transform: uppercase;
-
-        
-    @media(min-width:1024px){
-        margin-top: 62px;
-        margin-bottom: 16px;
-        font-size: 30px;
-        line-height: 1.13;
-
-        }
-    @media(min-width:1280px){
-        margin-top: 72px;
-        margin-bottom: 24px;
-        font-size: 36px;
-        line-height: 1.14;
-
-}}
-
-&__title-text{
-    text-transform: lowercase;
-}
-
-&__text{
-    font-family: 'Montserrat', sans-serif ;
-    margin-bottom: 32px;
-    color: #7A7A7A;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.25;
-    letter-spacing: 0.02;
-    display: block;
-   text-align: left;
-   max-width: 258px;
-
-   @media(min-width:1024px){
-    max-width: 439px;
-    margin-bottom: 176px;
-    font-size: 16px;
-    line-height: 1.25;
-
-    }
-@media(min-width:1280px){
-    margin-bottom: 188px;
-    font-size: 16px;
-    line-height: 1.25;
-    max-width: 400px;
-}
-        
-}
-
-
-&__logo{
-    color: #494848;
-    font-family: 'Film P3', sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.075;
-    letter-spacing: 0.3em;
-    text-decoration: none;
-
-    @media(min-width:1024px){
-        font-size: 64px;
-        }
-
-    
-}
-
-&__card{
-    margin-bottom: 32px;
-    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-    display: block;
-    max-width: 100%;
-    margin-left: auto;
-
-    @media(min-width:1024px){
-   position: absolute;
-        left: 50%;
-        top:-32px;
-        margin-bottom: 0;
-        
-}
-
-@media(min-width:1280px){
-    background-size: contain;
-}
-}}
-
-.luxe-room__button{
-    margin-left: auto;
-    margin-right: auto;
-    padding: 14px 37px;
-    background-color: $black;
-    
-    @media(min-width:1024px){
-        margin-right: 0;
-        margin-left: auto;
-    }
-
-
-}
-.luxe-room__link{
-    
-    max-width: 235px;
-    margin-bottom: 16px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    padding: 14px 64px;
-    height: 48px;
-    color: $accent-yellow;
-    cursor: pointer;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    border: 2px solid $white;
-    border-radius: 25px;
-    text-decoration: none;
-    background-color: $black;
-
-
-  transition-property: background-color, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus{
-    background-color: $white;
-    border-color: $accent-yellow;
-  }
-
-  @media(min-width:1024px){
-    margin-top: 89px;
-    margin-right: 0;
-    margin-left: auto;
-}
-}
-
-
-
-
-
-
 
 /*-------------*/
 
 
 .room-for-two{
-    background-color: #FFFDEE;
+
+    background-color: $lemon;
     padding-top: 32px;
-    padding-bottom:32px ;
+    padding-bottom:32px;
+
+
     @media(min-width:1024px){
     padding-top: 62px;
     padding-bottom:40px;
     position: relative;
+    height: 838px;
     }
     @media(min-width:1280px){
-        padding-top: 72px;
+        padding-top: 62px;
+        padding-bottom: 40px;
+        height: 956px;
     }
+
+    
 
 
 &__desc{
     margin-top: 0;
     margin-bottom: 10px;
-    color: #B4B4B4;
+    color: $gray-first;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.15;
@@ -218,7 +48,7 @@
     font-family: 'Times New Roman', sans-serif ;
     margin-top: 32px;
         margin-bottom: 12px;
-        color: #000000;
+        color: $black;
         font-weight: 700;
         font-size: 24px;
         line-height: 1.17;
@@ -248,7 +78,7 @@
 &__text{
     font-family: 'Montserrat', sans-serif ;
     margin-bottom: 32px;
-    color: #7A7A7A;
+    color: $color-text-gray;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
@@ -259,13 +89,13 @@
 
    @media(min-width:1024px){
     max-width: 439px;
-    margin-bottom: 176px;
+    margin-bottom: 217px;
     font-size: 16px;
     line-height: 1.25;
 
     }
 @media(min-width:1280px){
-    margin-bottom: 188px;
+    margin-bottom: 260px;
     font-size: 16px;
     line-height: 1.25;
     max-width: 400px;
@@ -275,7 +105,7 @@
 
 
 &__logo{
-    color: #494848;
+    color: $color-text-logo;
     font-family: 'Film P3', sans-serif;
     font-weight: 700;
     font-size: 40px;
@@ -298,7 +128,8 @@
     margin-left: auto;
 
     @media(min-width:1024px){
-   position: absolute;
+        margin-bottom: 0;
+        position: absolute;
         left: 50%;
         top:-32px;
         
@@ -326,6 +157,11 @@
 
 }
 .room-for-two__link{
+    @media(max-width:1023px){
+        margin-top: 20px;
+        
+    }
+
     max-width: 235px;
     margin-bottom: 16px;
     margin-left: auto;
@@ -357,8 +193,13 @@
     border-color: $accent-yellow;
   }
   @media(min-width:1024px){
-    margin-top: 89px;
     margin-right: 0;
     margin-left: auto;
 }
 }
+.room-for-two__image-for-slader{
+
+    @media(min-width:1024px){
+    position: absolute;
+}}
+
