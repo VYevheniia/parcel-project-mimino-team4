@@ -1,8 +1,8 @@
 function swiperSlider() {
-    const teamMain = document.querySelectorAll('[data-slider="team-slider"]');
-    //const heroSlider = document.querySelectorAll('[data-slider="hero-slider"]');
-    if (teamMain) {
-        teamMain.forEach(slider => {
+    const doubleMain = document.querySelectorAll('[data-slider="double-slider"]');
+    const heroSlider = document.querySelectorAll('[data-slider="hero-slider"]');
+    if (doubleMain) {
+        doubleMain.forEach(slider => {
             // кнопки вперед та назад
             let arrowLeft = slider.querySelector('.swiper-button-prev');
             let arrowRight = slider.querySelector('.swiper-button-next');
@@ -69,7 +69,7 @@ function swiperSlider() {
                     },
                     // when window width is >= 1200px
                     1200: {
-                        slidesPerView: 3,
+                        slidesPerView: 2,
                         spaceBetween: 40
                     }
                 }

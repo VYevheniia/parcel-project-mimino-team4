@@ -1,0 +1,109 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    
+        &__list{
+            display: flex;
+            align-items: center;
+            gap: 26px;
+            @include tablet {
+                gap: 72px;
+            }
+            
+        }
+        &__icon-phone{
+            display: flex;
+            align-items: center;
+            
+
+            @include tablet {
+                gap: 10px;
+                border: 1px solid $contacts-color;
+                border-radius: 2px;
+                padding: 10px 8px 10px 8px;
+            }
+        }
+        &__icon{
+            fill: $accent-yellow;
+        }
+        &__link{
+
+            display: none;
+
+            @include tablet {
+            display: flex;
+            text-decoration: none;
+            color: $white;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.21;
+            letter-spacing: 0.02em;
+            
+        }
+        }
+        
+        &__text{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: 0.02em;
+            color: $accent-yellow;
+            margin: 0;
+
+            @include tablet {
+                font-size: 20px;
+                line-height: 1.2;
+            }
+        }
+        
+        &__phone{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            @include tablet {
+                gap: 32px;
+              }
+        }
+
+        &__socials{
+
+            display: none;
+
+              @include desktop {
+                display: flex;
+                align-items: center;
+                gap: 23px;
+              }
+        }
+        &__socials-link{
+
+            display: none;
+
+            @include desktop {
+                display: flex;
+                fill: $accent-yellow;
+            }
+        }
+    }
+
+.logotype{
+    color: $white;
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+
+    @include tablet {
+        font-size: 40px;
+        line-height: 1.075;
+    }
+}
