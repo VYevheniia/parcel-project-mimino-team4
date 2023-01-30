@@ -3,44 +3,93 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 254px;
-    width: 254px !important;
+    min-height: 270px;
+    width: 270px !important;
     color: #fff;
     font-size: 32px;
-    background-color: none;
+    // background-color: red;
     transition: ease-in-out 0.5s;
 
     &.swiper-slide-next {
       // краще виставляти у %
       // зараз 17.3%  дорівнює 200px
-      //width: 200px !important;
-      width: 254px !important;
+      width: 162px !important;
+      // width: 17.3% !important;
     }
   }
 }
-.swiper-button-next {
-  top: 95%;
-  right: 0;
-  background-color: transparent;
-  border: none;
+
+// .slider-section {
+//   .swiper-slide {
+//     display: flex;
+//     flex-wrap: wrap;
+//     align-items: center;
+//     justify-content: center;
+//     min-height: 194px;
+//     width: 194px !important;
+//     color: #fff;
+//     font-size: 32px;
+//     background-color: none;
+//     transition: ease-in-out 0.5s;
+//     @media screen and (min-width: 1280px) {
+//       width: 254px !important;
+//       min-height: 254px;
+//     }
+
+//     &.swiper-slide-next {
+//       // краще виставляти у %
+//       // зараз 17.3%  дорівнює 200px
+//       //width: 200px !important;
+//       width: 194px !important;
+//       @media screen and (min-width: 1024px) {
+//         width: 254px !important;
+//       }
+//     }
+//   }
+// }
+.swiper-btns {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  margin-top: 32px;
 }
 
 .swiper-button-prev {
-  top: 95%;
-  left: 80%;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  // @media screen and (min-width: 1280px) {
+  //   left: 80%;
+  // }
+}
+.swiper-button-next {
+  position: relative;
+  // top: 95%;
+  // right: 0;
   background-color: transparent;
   border: none;
 }
 
-.swiper-button-next.hero-slider {
-  top: 50%;
-  background-color: rgba(0, 0, 0, 0.65);
-  right: 85px;
-}
+// .swiper-button-prev {
+//   top: 95%;
+//   left: 75%;
+//   background-color: transparent;
+//   border: none;
+//   @media screen and (min-width: 1280px) {
+//     left: 80%;
+//   }
+// }
 .swiper-button-prev.hero-slider {
+  position: absolute;
   top: 50%;
   background-color: rgba(0, 0, 0, 0.65);
-  left: 85px;
+  left: 5%;
+}
+.swiper-button-next.hero-slider {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.65);
+  right: 5%;
 }
 
 .swiper-button-next:after,
@@ -62,28 +111,49 @@
   fill: #f3c653;
 }
 
-.swiper {
-  padding-bottom: 74px;
-}
+// .swiper {
+//   padding-bottom: 74px;
+// }
 .swiper-btn {
   width: 60px;
 }
 .slider-container {
-  width: 548px;
+  width: 404px;
+  @media screen and (min-width = 1024px) {
+    // width: 548px;
+    width: 428px;
+  }
+  @media screen and (min-width = 1280px) {
+    width: 548px;
+  }
 }
 
 // Hero
 
 .hero-slider-container {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  margin: 0 auto;
   width: 414px;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width = 1024px) {
     width: 1024px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width = 1280px) {
     width: 1280px;
   }
+}
+
+// .slider-container-tripple {
+//   width: 748px;
+// }
+.slider-container3 {
+  width: 374px;
+  // margin-right: auto;
+  @media screen and (min-width = 1024px) {
+    // width: 548px;
+    width: 662px;
+  }
+  @media screen and (min-width = 1280px) {
+    width: 874px;
+  }
+}
+.swiper-btns.tripple {
+  justify-content: start;
 }
