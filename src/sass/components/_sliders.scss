@@ -1,0 +1,89 @@
+.slider-section {
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 254px;
+    width: 254px !important;
+    color: #fff;
+    font-size: 32px;
+    background-color: none;
+    transition: ease-in-out 0.5s;
+
+    &.swiper-slide-next {
+      // краще виставляти у %
+      // зараз 17.3%  дорівнює 200px
+      //width: 200px !important;
+      width: 254px !important;
+    }
+  }
+}
+.swiper-button-next {
+  top: 95%;
+  right: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.swiper-button-prev {
+  top: 95%;
+  left: 80%;
+  background-color: transparent;
+  border: none;
+}
+
+.swiper-button-next.hero-slider {
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.65);
+  right: 85px;
+}
+.swiper-button-prev.hero-slider {
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.65);
+  left: 85px;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: '';
+  background-color: none;
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: '';
+  position: absolute;
+  top: 80%;
+}
+.slider-button {
+  fill: black;
+  border: none;
+}
+.slider-button.hero-slider {
+  fill: #f3c653;
+}
+
+.swiper {
+  padding-bottom: 74px;
+}
+.swiper-btn {
+  width: 60px;
+}
+.slider-container {
+  width: 548px;
+}
+
+// Hero
+
+.hero-slider-container {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  margin: 0 auto;
+  width: 414px;
+  @media screen and (min-width: 1024px) {
+    width: 1024px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+}
