@@ -9,25 +9,59 @@
     text-transform: Uppercase;
     color: $color-text-logo;
     margin-bottom: 12px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 8px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 16px;
+    }
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: $tablet) {
+      flex-wrap: nowrap;
+      gap: 100px;
+    }
+  }
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   &__subtitle {
     font-family: 'Montserrat', sans-serif;
     color: $color-text-gray;
     margin-bottom: 16px;
-  }
 
-  &__list {
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 52px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 40px;
+    }
   }
 
   &__item {
-    // display: flex;
+    display: flex;
+    align-items: baseline;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 8px;
+      display: inline-block;
+    }
   }
 
   &__description {
     color: $brown;
+    display: block;
+    min-width: 144px;
 
-    @media screen and (min-width: $mobile) {
+    @media screen and (min-width: $tablet) {
       margin-bottom: 8px;
     }
   }
@@ -47,24 +81,23 @@
     border: 0.5px solid $accent-yellow;
     border-radius: 2px;
     background-color: $white;
-    // display: flex;
-    // gap: 12px;
-    // justify-content: space-around;
-    // align-items: center;
     margin-bottom: 16px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 12px;
+
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
+    }
   }
 
-  &__box--restaurant {
-    width: 144px;
-  }
-
-  &__box--hotel,
   &__box--location {
-    width: 260px;
-    @media screen and (min-width: $mobile) {
-      width: 264px;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
     }
   }
 
