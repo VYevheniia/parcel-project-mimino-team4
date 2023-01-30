@@ -43,14 +43,19 @@
 
   &__img {
     border-radius: 2px;
+
     &--first {
       margin-left: auto;
-      margin-bottom: 32px;
     }
     &--second {
       max-width: 200px;
+      margin-bottom: 32px;
     }
   }
+}
+
+.img-container {
+  margin-bottom: 32px;
 }
 
 .about-container {
@@ -91,13 +96,15 @@
     }
     &__img {
       &--first {
-        min-width: 400px;
         margin: 0;
+
+        min-width: 400px;
         transform: translateY(32px);
       }
       &--second {
-        min-width: 350px;
         margin-right: 48px;
+
+        min-width: 350px;
       }
     }
   }

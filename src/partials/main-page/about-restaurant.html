@@ -13,14 +13,29 @@
         </p>
       </div>
       <div class="img-container">
-        <picture
-          ><source
+        <picture>
+          <source
+            srcset="
+              ./images/about-restaurant/restaurant-interior-desktop.jpg    1x,
+              ./images/about-restaurant/restaurant-interior-desktop@2x.jpg 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/about-restaurant/restaurant-interior-tablet.jpg 1x,
+              ./images/about-restaurant/restaurant-interior-tablet.jpg 2x
+            "
+            media="(min-width:1024px)"
+          />
+          <source
             srcset="
               ./images/about-restaurant/restaurant-interior-mobile.jpg    1x,
               ./images/about-restaurant/restaurant-interior-mobile@2x.jpg 2x
             "
             media="(min-width:414px)"
           />
+
           <img
             src="./images/about-restaurant/restaurant-interior-mobile.jpg"
             class="about__img about__img--first"
@@ -49,7 +64,20 @@
         veniam consequat sunt nostrud amet.
       </p>
     </div>
-    <div class="swiper">
+    <div>
+      <picture>
+        <source />
+        <source />
+        <img src="./images/about-restaurant/restaurant-glasses-mobile.jpg" />
+      </picture>
+
+      <picture>
+        <source />
+        <source />
+        <img src="./images/about-restaurant/restaurant-glasses-mobile.jpg" />
+      </picture>
+    </div>
+    <!-- <div class="swiper">
       <ul class="swiper-wrapper">
         <li class="swiper-slide">
           <div class="swiper-inner">Slide 1</div>
@@ -58,6 +86,6 @@
           <div class="swiper-inner">Slide 2</div>
         </li>
       </ul>
-    </div>
+    </div> -->
   </div>
 </section>
