@@ -49,7 +49,6 @@
     }
     &--second {
       max-width: 200px;
-      margin-bottom: 32px;
     }
   }
 }
@@ -61,15 +60,25 @@
 .about-container {
   display: flex;
   align-items: center;
+  margin-bottom: 32px;
 }
 
 .slider-container {
+  margin-left: 69px;
+}
+.slider-img-container {
   display: flex;
 }
 
 .slider-img {
-  margin-left: 69px;
   margin-right: 25px;
+}
+
+.icons {
+  margin-left: 280px;
+  &__left {
+    margin-right: 34px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -115,6 +124,12 @@
 
         min-width: 350px;
       }
+    }
+  }
+  .icons {
+    margin-left: 429px;
+    &__left {
+      margin-right: 40px;
     }
   }
 }
