@@ -41,7 +41,7 @@ function funcPopup() {
             });
         }
     }
-
+ 
     function popupOpen(curentPopup) {
         if (curentPopup && unlock) {
             const popupActive = document.querySelector('.popup.open');
