@@ -152,7 +152,9 @@ width: 242px;
 .room-for-three__button{
   @media (max-width: 1023px){
     margin-top: 20px;
-   text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
    }
    
    @include tablet {
@@ -162,9 +164,12 @@ width: 242px;
 }
 
 .button-details{
-    display: inline;
-}
-.button-price{
+    text-decoration: none;
+    text-align: center;
+    padding-top: 14px;
+   }
+
+   .button-price{
     margin-top: 16px;
     display: inline;
 }
