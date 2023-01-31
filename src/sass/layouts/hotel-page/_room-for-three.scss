@@ -6,6 +6,7 @@
    }
    @include tablet {
     padding-top: 66px;
+    padding-bottom: 104px;
   }
    
   
@@ -15,14 +16,28 @@
     //padding-left: 85px;
 }
 
+//.room-for-three__information-img{
+//    display: flex;
+//}
+
 .room-for-three__information{
- margin-bottom: 32px;
+@media (max-width: 1023px){
+    margin-bottom: 32px;
+}
+ 
+ display: flex;
+ flex-direction: column;
+ align-items: flex-end;
 
 
 }
 
 
-
+.text-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 .room-for-three_text{
 color:$gray-first;
 font-family: 'Times New Roman';
@@ -67,6 +82,12 @@ margin-bottom: 32px;
 letter-spacing: normal;
 }
 
+//.title-description{
+//    display: flex;
+//    flex-direction: column;
+//    align-items: flex-end;
+//}
+
 .room-for-three__title{
 color: $black;
 font-family: 'Times New Roman';
@@ -77,8 +98,8 @@ font-size: 24px;
 line-height: 1.1;
 
 
-display:flex;
-justify-content: flex-end;
+//display:flex;
+//justify-content: flex-end;
 margin-bottom: 12px;
 
 @include tablet {
@@ -106,17 +127,17 @@ letter-spacing: 0.02em;
 
 
 width: 242px;
-display:block;
-justify-content: center;
-margin-left: 83px;
+//display:block;
+//justify-content: center;
+//margin-left: 83px;
 
-@media (max-width: 413px){
-    margin-left: auto;
-}
+//@media (max-width: 413px){
+//    margin-left: auto;
+//}
 @include tablet {
     font-size: 16px;
     width: 400px;
-    margin-right: 67px;
+    
   }
 
 
@@ -137,19 +158,33 @@ margin-left: 83px;
     border-radius: 2px;
     width: 244px;
     //margin-top: -33px;
+
+    @include tablet {
+        width: 400px;
+        margin-top: -500px;
+    }
     
 }
 
 .room-for-three__button{
    text-align: center;
+   @include tablet {
+   display: flex;
+   flex-direction: column;
+}
 }
 
 .button-details{
-    margin-top: 20px;
     display: inline;
 }
 
 .button-price{
     margin-top: 16px;
     display: inline;
+}
+
+.room-for-three__footer{
+margin-top: 48px;
+
+display: flex;
 }
