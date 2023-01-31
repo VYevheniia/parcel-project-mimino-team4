@@ -1,24 +1,38 @@
 .room-for-three{
    background-color: $dark-lemon ;
    
+   
    @media (max-width: 1023px){
     padding: 32px 15px;
+    overflow: hidden;
    }
    @include tablet {
-    padding-top: 66px;
     padding-bottom: 104px;
   }
-   
-  
-
-
-     //display: flex;
-    //padding-left: 85px;
 }
 
-//.room-for-three__information-img{
-//    display: flex;
-//}
+.room-for-three__information-img{
+  @include tablet {
+    display: flex;
+    flex-direction:row-reverse;
+  }
+    
+}
+
+.room-for-three_tumb{
+  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  width: 244px;
+  
+  @include tablet {
+      width: 400px;
+      margin-top: -33px;
+  }
+
+  @include desktop {
+    width: 460px;
+  }
+}
 
 .room-for-three__information{
 @media (max-width: 1023px){
@@ -29,15 +43,26 @@
  flex-direction: column;
  align-items: flex-end;
 
-
+ @include tablet {
+  margin-left: 45px;
+  margin-right: 17px;
 }
 
+@include desktop {
+  margin-right: 57px;
+}
+}
 
 .text-logo{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    @include tablet {
+      margin-top: 66px;
+    }
 }
+
 .room-for-three_text{
 color:$gray-first;
 font-family: 'Times New Roman';
@@ -73,20 +98,12 @@ margin-bottom: 32px;
     font-size: 64px;
     margin-bottom: 62px;
   }
-
-//margin-top: 4px;
-//margin-bottom: 75px;
 }
-
 .logo--letter-spacing{
 letter-spacing: normal;
 }
 
-//.title-description{
-//    display: flex;
-//    flex-direction: column;
-//    align-items: flex-end;
-//}
+
 
 .room-for-three__title{
 color: $black;
@@ -97,23 +114,12 @@ letter-spacing: 0.05em;
 font-size: 24px;
 line-height: 1.1;
 
-
-//display:flex;
-//justify-content: flex-end;
 margin-bottom: 12px;
 
 @include tablet {
     font-size: 30px;
     margin-bottom: 16px;
   }
-
-
-
-
-//font-size: 36px;
-//margin-left: 45px;
-//margin-bottom: 24px;
-
 }
 
 .room-for-three__description{
@@ -124,50 +130,31 @@ font-weight: 600;
 font-size: 12px;
 line-height: 1.2;
 letter-spacing: 0.02em;
-
-
 width: 242px;
-//display:block;
-//justify-content: center;
-//margin-left: 83px;
 
-//@media (max-width: 413px){
-//    margin-left: auto;
-//}
 @include tablet {
     font-size: 16px;
     width: 400px;
-    
-  }
-
-
-
-
-
-
-//font-weight: 700;
-//font-size: 16px;
-
-//width: 400px;
-
+}
 }
 
-.room-for-three_tumb{
-    
-    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
-    width: 244px;
-    //margin-top: -33px;
-
-    @include tablet {
-        width: 400px;
-        margin-top: -500px;
-    }
-    
+.room-for-three__footer{
+  margin-top: 32px;
+  @include tablet {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
 }
 
 .room-for-three__button{
+  @media (max-width: 1023px){
+    margin-top: 20px;
    text-align: center;
+   }
+   
    @include tablet {
    display: flex;
    flex-direction: column;
@@ -177,14 +164,30 @@ width: 242px;
 .button-details{
     display: inline;
 }
-
 .button-price{
     margin-top: 16px;
     display: inline;
 }
 
-.room-for-three__footer{
-margin-top: 48px;
+.room-for-three__slider{
+  @media (max-width: 1023px){
+    margin-left: 130px;
+   }
+  }
 
-display: flex;
+.room-for-three__swiper-btns{
+  margin-right: 125px;
+  margin-top: 20px;
+
+ @include tablet {
+  margin-right: 336px;
+  margin-top: 32px;
 }
+
+@include desktop {
+  margin-right: 456px;
+  margin-top: 40px;
+}
+}
+
+
