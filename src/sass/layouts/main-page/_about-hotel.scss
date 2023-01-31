@@ -18,12 +18,12 @@
     padding-top: 62px;
     padding-bottom:40px;
     position: relative;
-    height: 838px;
+   
     }
     @media(min-width:1280px){
         padding-top: 62px;
         padding-bottom: 40px;
-        height: 956px;
+        
     }
 
     
@@ -89,13 +89,13 @@
 
    @media(min-width:1024px){
     max-width: 439px;
-    margin-bottom: 217px;
+    margin-bottom: 176px;
     font-size: 16px;
     line-height: 1.25;
 
     }
 @media(min-width:1280px){
-    margin-bottom: 260px;
+    margin-bottom: 188px;
     font-size: 16px;
     line-height: 1.25;
     max-width: 400px;
@@ -146,14 +146,6 @@
     padding: 14px 37px;
     background-color: $black;
 
-    @media(min-width:1024px){
-        margin-right: 0;
-        margin-left: auto;
-        
-    }
-    
-
-
 
 }
 .room-for-two__link{
@@ -192,14 +184,30 @@
     background-color: $white;
     border-color: $accent-yellow;
   }
-  @media(min-width:1024px){
-    margin-right: 0;
-    margin-left: auto;
-}
-}
-.room-for-two__image-for-slader{
 
+}
+
+
+.room-for-two__swiper-button-prev{
+    left: 0;
+
+    
     @media(min-width:1024px){
-    position: absolute;
-}}
+        left:80%;
+    }
 
+}
+
+.room-for-two__swiper-button-next{
+    right: 80%;
+    @media(min-width:1024px){
+        right:0;
+    }
+}
+
+.room-for-two__slider-button{
+    @media(min-width:1024px){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+}
