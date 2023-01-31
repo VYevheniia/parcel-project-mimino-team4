@@ -52,7 +52,10 @@
 .text-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 28px;
+
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 28px;
+  }
 
   &--restaurant {
     align-items: flex-start;
@@ -92,7 +95,7 @@
   }
 
   .text-container--restaurant {
-    margin-right: 28px;
+    margin-right: 26px;
   }
 
   .about__text {
@@ -108,9 +111,24 @@
     font-size: 16px;
   }
 
-  .about-img--first {
-    min-width: 450px;
+  .img-container {
+    min-width: 400px;
+    &--restaurant {
+      margin-right: 97px;
+    }
+    &--second {
+      min-width: 350px;
+
+      transform: translateY(-24px);
+    }
   }
+  .img-restaurant {
+    margin-right: 48px;
+  }
+
+  // .about-img--first {
+  //   min-width: 450px;
+  // }
 
   .about-img--second {
     min-width: 350px;

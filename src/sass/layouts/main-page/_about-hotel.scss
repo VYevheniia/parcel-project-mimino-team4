@@ -7,6 +7,29 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .about-flex--hotel {
+    flex-direction: row-reverse;
+    padding-left: 97px;
+  }
+
+  .img-container--hotel {
+    margin-right: 46px;
+  }
+
+  .text-container--hotel {
+    min-width: 419px;
+  }
+
+  .about-container--hotel {
+    padding-left: 252px;
+  }
+
+  .hotel--second {
+    margin-right: 48px;
+  }
+}
 // .about__text {
 //   &--hotel {
 //     margin-left: 194px;
