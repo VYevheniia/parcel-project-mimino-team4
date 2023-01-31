@@ -190,19 +190,18 @@
 
 .room-for-two__swiper-button-prev{
     left: 0;
-
-    
     @media(min-width:1024px){
-        left:80%;
+        left: 80%;
     }
+ 
 
 }
 
 .room-for-two__swiper-button-next{
-    right: 80%;
-    @media(min-width:1024px){
-        right:0;
-    }
+   right:80%;
+   @media(min-width:1024px){
+    right:0;
+}
 }
 
 .room-for-two__slider-button{
@@ -210,4 +209,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;}
+}
+.room-for-two__swiper-wrapper{
+    transform: translate3d(-50px, 0px, 0px);
 }
