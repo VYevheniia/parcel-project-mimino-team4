@@ -1,5 +1,57 @@
-.about__text {
+.text-container {
   &--hotel {
-    margin-left: auto;
+    align-items: flex-end;
+
+    @media screen and (max-width: 1023px) {
+      margin-left: 153px;
+    }
   }
 }
+// .about__text {
+//   &--hotel {
+//     margin-left: 194px;
+//   }
+// }
+
+// .about__mimino {
+//   &--hotel {
+//     margin-left: 257px;
+//   }
+// }
+
+// .about__paragraph {
+//   &--hotel {
+//     margin-left: 143px;
+//   }
+// }
+
+// @media screen and (max-width: 1023px) {
+//   .img-container {
+//     &--hotel {
+//       margin-right: 140px;
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 1024px) {
+//   .about-flex--hotel {
+//     flex-direction: row-reverse;
+//   }
+// }
+// .about__text {
+//   &--hotel {
+//     margin-left: 156px;
+//   }
+// }
+
+// .about__paragraph {
+//   &--hotel {
+//     margin-left: 46px;
+//   }
+// }
+
+// //   .hotel--second {
+// //     margin-left: 252px;
+// //     margin-right: 48px;
+// //   }
+// // }
