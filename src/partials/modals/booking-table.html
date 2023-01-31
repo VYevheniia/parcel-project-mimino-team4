@@ -1,0 +1,55 @@
+<!-- Приклад для кнопки або лінку виклику модалки для додаванння на місця у відповідних секціях:
+
+<a href="#" data-popup-btn="booking__table" class="popup-link">Забронювати столик</a>
+<button type="button" data-popup-btn="booking__table" class="popup-link">Забронювати столик</button>
+
+<p>Тег можна використовувати який завгодно головне додати дата атрибут та клас <b>popup-link</b></p>
+<p> Дата атрибут <b>data-popup-btn="booking__table"</b> відповідає атрибуту модалки <b>data-popup-target="booking__table"</b></p> -->
+
+<div data-popup-target="booking__table" class="popup">
+    <div class="popup__body">
+        <div class="popup__content">
+         <button type="button" class="popup__close close-popup"><img class="popup__cross" src="images/close-button.svg" alt="Close button" width="24"></button>
+          <h2 class="popup__title">ЗАБРОНЮВАТИ СТОЛИК</h2>
+          <form class="form" autocomplete="off">
+          <div class="form__wrap-booking-input">
+          <div class="form__field">
+          <input class="form__input" type="text" name="name" id="name" required pattern="[A-Za-zА-Яа-яґҐЁёІіЇїЄє'’ʼ\s-]{2,20}{2,50}" title="Введіть ім'я українськими або латинськими літерами" placeholder="Ваше ім'я" />
+          <label class="form__label" for="name">На кого забронювати столик?</label>
+          </div>
+          <div class="form__field">
+          <input class="form__input" type="tel" name="tel" id="tel" required pattern="[\+]?3?[\s]?8?[\s]?\(?0\d{2}?\)?[\s]?\d{3}[\s|-]?\d{2}[\s|-]?\d{2}" title="Введіть номер телефону згідно прикладу" placeholder="+38 (___) ___-__-__"/>
+          <label class="form__label" for="tel">Номер телефону</label>
+          </div>
+          </div>
+          <div class="form__wrap-booking-select">
+          <div class="form__field form__select-wrap">
+            <select name="table-select" id="table-select" class="form__select">
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+            <option value="10">12</option>
+            </select>
+          <label class="form__label" for="table-select">Столик на яку кількість осіб?</label>
+          </div>
+          <div class="form__field form__select-wrap">
+            <select name="date-select" id="date-select" class="form__select">
+                <option value="Today">Сьогодні</option>
+                <option value="Monday">Понеділок</option>
+                <option value="Tuesday">Вівторок</option>
+                <option value="Wednesday">Cереда</option>
+                <option value="Thursday">Четвер</option>
+                <option value="Friday">П'ятниця</option>
+                <option value="Wednesday">Субота</option>
+                <option value="Sunday">Неділя</option>
+            </select>
+          <label class="form__label" for="date-select">На яку дату бронювати?</label>
+          </div>
+          </div>
+          <button class="form__button" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+          </form>
+        </div>
+    </div>
+</div>

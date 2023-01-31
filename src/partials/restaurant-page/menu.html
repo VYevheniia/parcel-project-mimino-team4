@@ -2,8 +2,8 @@
 <section class="restaurant-menu section"> 
     <div class="container">
     <h2 class="restaurant-menu__title">МЕНЮ РЕСТОРАНУ </h2>
-    <ul class="list restaurant-menu__type-dishes">
-            <li class="restaurant-menu__type-dish">
+    <ul class="list restaurant-menu__set">
+            <li class="restaurant-menu__item">
                 <ul class="list">
                      <li>
                         <h3 class="restaurant-menu__subtitle">Гарячі страви</h3>
@@ -108,50 +108,50 @@
             </li>
                 </ul>
             </li>
-            <li class="restaurant-menu__type-dish">
+            <li class="restaurant-menu__item">
                 <ul class="list">
-                    <li class="restaurant-menu__type-dish">
-                <h3 class="restaurant-menu__subtitle">Салати</h3>
-                <ul class="list">
-                    <li>
-                        <include src="./partials/restaurant-page/dish-template.html">{
-                            "title": "Цезар з куркою",
-                            "ingredients": "Куряче філе, листя салату, помідори чері, сир пармезан, грінки, соус цезар",
-                            "weight": "230 г",
-                            "price": "450 грн"
-                        }
-                        </include>
-                    </li>
-                    <li>
-                        <include src="./partials/restaurant-page/dish-template.html">{
-                            "title": "Цезар з креветками",
-                            "ingredients": "Тигрові креветки, листя салату, помідори чері, сир пармезан, грінки, соус цезар",
-                            "weight": "230 г",
-                            "price": "300 грн"
-                        }
-                        </include>
-                    </li>
-                    <li>
-                        <include src="./partials/restaurant-page/dish-template.html">{
-                            "title": "Грецький салат",
-                            "ingredients": "Свіжі огірок, помідор, болгарський перець, оливки, сир бринза, листя салату, соус",
-                            "weight": "230 г",
-                            "price": "280 грн"
-                        }
-                        </include>
-                    </li>
-                    <li>
-                        <include src="./partials/restaurant-page/dish-template.html">{
-                            "title": "М’ясний салат",
-                            "ingredients": "Куряче філе або свиняча вирізка, свіжі огірок, помідор, болгарський перець, соус ранч",
-                            "weight": "230 г",
-                            "price": "300 грн"
-                        }
-                        </include>
-                    </li>                    
-                </ul>
+                    <li class="restaurant-menu__item">
+                        <h3 class="restaurant-menu__subtitle">Салати</h3>
+                        <ul class="list">
+                            <li>
+                                <include src="./partials/restaurant-page/dish-template.html">{
+                                    "title": "Цезар з куркою",
+                                    "ingredients": "Куряче філе, листя салату, помідори чері, сир пармезан, грінки, соус цезар",
+                                    "weight": "230 г",
+                                    "price": "450 грн"
+                                }
+                                </include>
+                            </li>
+                            <li>
+                                <include src="./partials/restaurant-page/dish-template.html">{
+                                    "title": "Цезар з креветками",
+                                    "ingredients": "Тигрові креветки, листя салату, помідори чері, сир пармезан, грінки, соус цезар",
+                                    "weight": "230 г",
+                                    "price": "300 грн"
+                                }
+                                </include>
+                            </li>
+                            <li>
+                                <include src="./partials/restaurant-page/dish-template.html">{
+                                    "title": "Грецький салат",
+                                    "ingredients": "Свіжі огірок, помідор, болгарський перець, оливки, сир бринза, листя салату, соус",
+                                    "weight": "230 г",
+                                    "price": "280 грн"
+                                }
+                                </include>
+                            </li>
+                            <li>
+                                <include src="./partials/restaurant-page/dish-template.html">{
+                                    "title": "М’ясний салат",
+                                    "ingredients": "Куряче філе або свиняча вирізка, свіжі огірок, помідор, болгарський перець, соус ранч",
+                                    "weight": "230 г",
+                                    "price": "300 грн"
+                                }
+                                </include>
+                            </li>                    
+                        </ul>
             </li>
-            <li class="restaurant-menu__type-dish">
+            <li class="restaurant-menu__item">
                 <h3 class="restaurant-menu__subtitle">Десерти</h3>
                 <ul class="list">
                     <li>
@@ -180,7 +180,7 @@
                     </li>                    
                 </ul>
             </li>
-            <li class="restaurant-menu__type-dish">
+            <li class="restaurant-menu__item">
                 <h3 class="restaurant-menu__subtitle">Напої</h3>
                 <ul class="list">                    
                     <li>
@@ -231,8 +231,10 @@
             
         </ul>
         <!-- Забронювати столик -->
-        <button class="button">
-    <div class="button__text">Забронювати столик</div>
-</button>
+        <button type="button"
+            data-popup-btn="booking__table"
+            class="booking-table-button popup-link">
+            Забронювати столик
+        </button>        
    </div>
 </section>  

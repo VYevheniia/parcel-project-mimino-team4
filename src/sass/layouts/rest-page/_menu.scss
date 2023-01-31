@@ -22,7 +22,7 @@ th {
     color: #000000;
   }
 
-  &__type-dishes {
+  &__set {
 
       @media (min-width: $tablet) {
         display: flex;
@@ -31,7 +31,7 @@ th {
       }
   }
 
-  &__type-dish {
+  &__item {
     margin-bottom: 16px;
     &:last-child {
       margin-bottom: 0;
@@ -112,4 +112,9 @@ width: 80px;
   /* Black */
 
   color: #000000;
+}
+.booking-table-button{
+  @extend .button;
+  @extend .button__black;
+  margin-left: auto;
 }
