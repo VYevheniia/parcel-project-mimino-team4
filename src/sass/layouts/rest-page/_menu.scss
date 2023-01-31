@@ -116,5 +116,8 @@ width: 80px;
 .booking-table-button{
   @extend .button;
   @extend .button__black;
+  @media screen and (max-width:( $tablet - 1)){
+    margin-right: auto;
+    }
   margin-left: auto;
 }
