@@ -3,6 +3,9 @@
   padding-top: 36px;
   padding-bottom: 32px;
   position: relative;
+  &__title {
+    display: none;
+  }
 
   &__logo {
     font-family: 'Film P3', sans-serif;
