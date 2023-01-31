@@ -127,7 +127,16 @@
     width: 548px;
   }
 }
-
+.slider-container.page3 {
+  width: 514px;
+  @media screen and (min-width = 1024px) {
+    // width: 548px;
+    width: 428px;
+  }
+  @media screen and (min-width = 1280px) {
+    width: 548px;
+  }
+}
 // Hero
 
 .hero-slider-container {

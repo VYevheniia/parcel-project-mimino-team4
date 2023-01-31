@@ -278,6 +278,20 @@ address {
   }
 }
 
+.slider-container.page3 {
+  width: 514px;
+}
+@media screen and (min-width = 1024px) {
+  .slider-container.page3 {
+    width: 428px;
+  }
+}
+@media screen and (min-width = 1280px) {
+  .slider-container.page3 {
+    width: 548px;
+  }
+}
+
 .hero-slider-container {
   width: 414px;
 }
