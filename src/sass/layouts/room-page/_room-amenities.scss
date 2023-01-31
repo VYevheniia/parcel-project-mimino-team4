@@ -1,0 +1,134 @@
+.amenities {
+  width: 100%;
+  background-color: $lemon;
+  font-family: 'Montserrat';
+  font-weight: 700;
+
+  &__container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+
+    color: $black;
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.15;
+  }
+  &__text {
+    color: $color-text-gray;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+  }
+  &__subtitle {
+    margin-top: 32px;
+    margin-bottom: 16px;
+
+    color: $black;
+    font-family: 'Times New Roman';
+    font-size: 24px;
+    line-height: 1.16;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item + &__item {
+    margin-top: 16px;
+  }
+  &__desc {
+    color: $color-text-gray;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+  }
+  &__buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__button-reservation {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  &__link-back {
+    display: flex;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    color: $brown;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+  }
+  &__back-icon {
+    fill: currentColor;
+    margin-left: 12px;
+  }
+  &__link-back:hover,
+  &__link-back:focus {
+    color: $accent-yellow;
+  }
+  @include mobile {
+    &__text {
+      max-width: 384px;
+    }
+    &__desc {
+      max-width: 384px;
+    }
+    &__button-reservation {
+      width: 386px;
+    }
+  }
+  @include tablet {
+    &__container {
+      padding-top: 50px;
+      padding-bottom: 40px;
+    }
+    &__text {
+      max-width: 757px;
+    }
+    &__list {
+      display: flex;
+      flex-direction: row;
+    }
+    &__item + &__item {
+      margin-top: 0px;
+      margin-left: 80px;
+    }
+    &__desc {
+      max-width: 400px;
+    }
+    &__buttons-container {
+      align-items: flex-end;
+    }
+    &__button-reservation {
+      padding-top: 18px;
+      padding-bottom: 18px;
+      margin-top: 40px;
+      margin-bottom: 32px;
+
+      font-size: 24px;
+    }
+    &__link-back {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+  @include desktop {
+    &__container {
+      padding-right: 198px;
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
+  }
+}
