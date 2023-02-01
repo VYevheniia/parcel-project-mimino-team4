@@ -19,34 +19,6 @@
   }
 }
 
-// .slider-section {
-//   .swiper-slide {
-//     display: flex;
-//     flex-wrap: wrap;
-//     align-items: center;
-//     justify-content: center;
-//     min-height: 194px;
-//     width: 194px !important;
-//     color: #fff;
-//     font-size: 32px;
-//     background-color: none;
-//     transition: ease-in-out 0.5s;
-//     @media screen and (min-width: 1280px) {
-//       width: 254px !important;
-//       min-height: 254px;
-//     }
-
-//     &.swiper-slide-next {
-//       // краще виставляти у %
-//       // зараз 17.3%  дорівнює 200px
-//       //width: 200px !important;
-//       width: 194px !important;
-//       @media screen and (min-width: 1024px) {
-//         width: 254px !important;
-//       }
-//     }
-//   }
-// }
 .swiper-btns {
   display: flex;
   justify-content: end;
@@ -58,27 +30,12 @@
   position: relative;
   background-color: transparent;
   border: none;
-  // @media screen and (min-width: 1280px) {
-  //   left: 80%;
-  // }
 }
 .swiper-button-next {
   position: relative;
-  // top: 95%;
-  // right: 0;
   background-color: transparent;
   border: none;
 }
-
-// .swiper-button-prev {
-//   top: 95%;
-//   left: 75%;
-//   background-color: transparent;
-//   border: none;
-//   @media screen and (min-width: 1280px) {
-//     left: 80%;
-//   }
-// }
 .swiper-button-prev.hero-slider {
   position: absolute;
   top: 50%;
@@ -110,10 +67,6 @@
 .slider-button.hero-slider {
   fill: #f3c653;
 }
-
-// .swiper {
-//   padding-bottom: 74px;
-// }
 .swiper-btn {
   width: 60px;
 }
@@ -137,7 +90,16 @@
     width: 548px;
   }
 }
-// Hero
+.slider-container.page4 {
+  width: 514px;
+  @media screen and (min-width = 1024px) {
+    // width: 548px;
+    width: 428px;
+  }
+  @media screen and (min-width = 1280px) {
+    width: 568px;
+  }
+}
 
 .hero-slider-container {
   width: 414px;
@@ -149,9 +111,6 @@
   }
 }
 
-// .slider-container-tripple {
-//   width: 748px;
-// }
 .slider-container3 {
   width: 374px;
   // margin-right: auto;
@@ -163,6 +122,7 @@
     width: 874px;
   }
 }
+
 .swiper-btns.tripple {
   justify-content: start;
 }
