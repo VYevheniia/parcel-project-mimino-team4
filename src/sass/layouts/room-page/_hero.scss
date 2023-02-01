@@ -1,0 +1,275 @@
+.hero__section {
+  padding: 181px 0 102px 0;
+  text-align: center;
+
+  @include tablet {
+    padding: 188px 0 64px 0;
+  }
+  @include desktop {
+    padding: 164px 0 65px 0;
+  }
+}
+
+.overlay {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (max-width: 1024px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/hero/hero_main_phone.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 1024px),
+    (min-resolution: 192dpi) and (max-width: 1024px),
+    (min-resolution: 2dppx) and (max-width: 1024px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/hero/hero_main_phone_2x.jpg);
+  }
+
+  @media screen and (min-width: 1024px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/hero/hero_main_tablet.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
+    (min-resolution: 192dpi) and (min-width: 1024px),
+    (min-resolution: 2dppx) and (min-width: 1024px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/hero/hero_main_tablet_2x.jpg);
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/hero/hero_main_desctop.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    (min-resolution: 192dpi) and (min-width: 1280px),
+    (min-resolution: 2dppx) and (min-width: 1280px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/hero/hero_main_desctop_2x.jpg);
+  }
+}
+
+.hero__container {
+  // min-width: 320px;
+  // padding: 0 15px;
+  // margin-left: auto;
+  // margin-right: auto;
+
+  position: relative;
+}
+
+.hero__titel {
+  width: 303px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1.073;
+  letter-spacing: 0.3em;
+
+  color: #ffffff;
+  text-transform: uppercase;
+
+  @include tablet {
+    width: 404px;
+    margin-bottom: 16px;
+    font-size: 128px;
+    line-height: 1.08;
+  }
+  @include desktop {
+    margin-bottom: 32px;
+  }
+}
+
+.hero__type {
+  width: 294px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+
+  @include tablet {
+    width: 368px;
+    margin-bottom: 56px;
+  }
+  @include desktop {
+    margin-bottom: 64px;
+  }
+}
+
+.hero__slogan {
+  margin: 0 auto;
+  margin-bottom: 113px;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #fdfbec;
+
+  @include tablet {
+    margin-bottom: 145px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .hero__button {
+    margin: 0 auto;
+  }
+  .hero__button-mobile-margin {
+    margin-bottom: 24px;
+  }
+}
+
+@include tablet {
+  .hero__button-wrap {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+  }
+}
+
+.hero__button-table {
+  margin: 0 0 24px 0;
+
+  padding: 18px auto;
+  width: 236px;
+  height: 48px;
+  color: #f3c653;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+
+  transition-property: background-color, border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero__button-room {
+  margin: 0 0 58px 0;
+
+  padding: 18px auto;
+  width: 236px;
+  height: 48px;
+  color: #f3c653;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+
+  transition-property: background-color, border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero__social-wrap {
+  position: absolute;
+  top: 515px;
+
+  @include tablet {
+    top: 493px;
+    left: 47px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.hero__social {
+  display: flex;
+  gap: 23px;
+  justify-content: center;
+  border: none;
+  padding: 0;
+}
+.social__icon {
+  width: 24px;
+  height: 24px;
+  fill: rgba(243, 198, 83, 0.7);
+}
+
+.hero__address {
+  position: absolute;
+  right: 15px;
+  top: 64px;
+  display: flex;
+  align-items: center;
+  width: 210px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+}
+
+.location__icon {
+  padding: 8px;
+  width: 20px;
+  height: 20px;
+  fill: rgba(243, 198, 83, 0.7);
+}
+.town__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+
+  color: #e5e5e5;
+}
