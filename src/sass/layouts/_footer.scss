@@ -1,0 +1,107 @@
+.footer {
+  background-color: $color-footer;
+  padding: 40px 33px 40px 59px;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 80px 0 80px 154px;
+  }
+  @include desktop {
+    padding: 80px 0 80px 216px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+
+    @include tablet {
+      gap: 183px;
+    }
+
+    @include desktop {
+      gap: 231px;
+    }
+  }
+
+  &__logotype {
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.075;
+    letter-spacing: 0.3em;
+    color: $accent-yellow;
+    margin-top: 60px;
+
+    @include tablet {
+      font-size: 64px;
+      line-height: 1.07;
+      margin-top: 40px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: $accent-yellow;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 23px;
+    margin-top: 33px;
+    margin-left: 214px;
+    flex-direction: row-reverse;
+
+    @include tablet {
+      margin-left: 137px;
+      margin-top: 0;
+      flex-direction: column;
+      gap: 12px;
+    }
+    @include desktop {
+      margin-left: 199px;
+    }
+  }
+
+  &__socials-item {
+    fill: $accent-yellow;
+    display: flex;
+    align-items: center;
+
+    @include tablet {
+      justify-content: space-between;
+      border: 0.5px solid $accent-yellow;
+      border-radius: 2px;
+      padding: 10px 12px;
+      width: 144px;
+      height: 40px;
+    }
+  }
+
+  &__socials-link {
+    display: none;
+
+    @include tablet {
+      display: block;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.02em;
+      color: $accent-yellow;
+    }
+  }
+}
