@@ -1,0 +1,193 @@
+.details {
+    padding-top: 24px;
+    padding-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.76);
+    // padding: 118px 0;
+    max-width: 1280px;
+    width: 100%;
+    height: 735px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    background-image: url(/src/images/main_details-hotel_mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (min-width: $tablet) {
+        height: 620px;
+        max-width: 1024px;
+        background-image: url(/src/images/main_details-hotel_tablet.jpg);
+        padding-top: 48px;
+
+        .interaction {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            max-height: 270px;
+            // flex-wrap: wrap;
+            // height: 620px;
+            // max-width: 1024px;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: 1280px;
+        background-image: url(/src/images/main_details-hotel_desk.jpg);
+    }
+}
+
+.desc{
+    margin-left: 125px;
+    margin-bottom: 48px;
+    margin-top: 24px;
+
+    outline: 1px red solid;
+
+    @media screen and (min-width: $tablet) {
+        // margin-left: 278px;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        // margin-left: 338px;
+    }
+
+    &__title{
+        font-family: Montserrat-Bold, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+
+        color: white;
+        text-align: left;
+        margin-bottom: 20px;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+    }
+
+    &__text {
+        font-family: Montserrat-Bold, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+
+        color: gray;
+        text-align: left;
+        // margin-bottom: 48px;
+        // max-width: 100%;
+        // margin-right: 15px;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 16px;
+            max-width: 610px;
+
+        }
+    }
+}
+
+.logo {
+    font-family: Film P3, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.3em;
+
+    color: white;
+    text-align: left;
+    // margin-left: 140px;
+    // text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 64px;
+        margin-bottom: 16px;
+    }
+
+    &__span {
+        letter-spacing: 0em;
+    }
+}
+
+// .slider {
+//     max-width: 274px;
+//     width: 100%;
+//     height: 270px;
+//     margin-top: 48px;
+//     margin-left: 40px;
+//     margin-right: 100px;
+//     margin-bottom: 80px;
+
+//     outline: 1px red solid;
+// }
+
+.details-btn {
+    // display: block;
+    // text-align: center;
+    // margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    list-style: none;
+    // width: 236px;
+    // width: 100%;
+
+    @media screen and (min-width: $tablet) {
+        justify-content: end;
+        // margin-bottom: 96px;
+        // padding: 0;
+    }
+
+    // @media screen and (min-width: $desktop) {
+    //     margin-bottom: 96px;
+    //     padding: 0;
+    // }
+
+    // &__item{
+    //     width: 236px;
+    //     // width: 100%;
+    // }
+
+    &__reserv {
+        background-color: $background-button;
+        // width: 236px;
+        // width: 100%;
+        padding: 14px 24px;
+    }
+
+    &__link {
+        // display: block;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        border: 2px solid $white;
+        border-radius: 25px;
+        // width: 236px;
+        // width: 100%;
+        height: 48px;
+        color: $accent-yellow;
+        background-color: $background-button;
+        cursor: pointer;
+        padding: 14px 31px;
+
+        // width: 236px;
+
+        transition-property: background-color, border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}

@@ -1,21 +1,17 @@
-// base
+// utils
+@import './utils/main';
+@import './utils/variables';
 
+// base
 @import './base/main';
 
-// components
-
-@import './components/main';
-
 // layouts
-
 @import './layouts/header';
-
 @import './layouts/hotel-page/main';
 @import './layouts/main-page/main';
 @import './layouts/rest-page/main';
 @import './layouts/room-page/main';
 @import './layouts/footer';
 
-// utils
-
-@import './utils/main';
+// components
+@import './components/main';

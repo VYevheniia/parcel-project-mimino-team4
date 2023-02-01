@@ -1,0 +1,86 @@
+.button {
+  display: block;
+  padding: 14px auto;
+  height: 48px;
+  color: $accent-yellow;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  border: 2px solid $white;
+  border-radius: 25px;
+
+  transition-property: background-color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    border-color: $accent-yellow;
+  }
+  &__black {
+    width: 236px;
+    background-color: $black;
+  }
+  &__gray232 {
+    width: 232px;
+    background-color: $background-button;
+  }
+  &__gray243 {
+    width: 243px;
+    background-color: $background-button;
+  }
+  &__gray254 {
+    width: 254px;
+    background-color: $background-button;
+  }
+  &__gray258 {
+    width: 258px;
+    background-color: $background-button;
+  }
+}
+
+.button-reservation {
+  display: block;
+  padding: 18px auto;
+  width: 434px;
+  height: 64px;
+  color: $white;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  background-color: $black;
+  border: 1px solid $accent-yellow;
+  border-radius: 25px;
+
+  transition-property: background-color, border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #000000;
+    background-color: $accent-yellow;
+    border-color: $accent-yellow;
+  }
+  &__mobile {
+    width: 384px;
+    padding: 20px auto;
+  }
+  &__modal {
+    width: 592px;
+    border-radius: 2px;
+  }
+  &__mobile-modal {
+    width: 384px;
+    padding: 20px auto;
+    border-radius: 2px;
+  }
+}

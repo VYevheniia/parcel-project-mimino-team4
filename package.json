@@ -19,11 +19,16 @@
   },
   "dependencies": {
     "caniuse-lite": "^1.0.30001449",
+    "imask": "^6.4.3",
     "modern-normalize": "^1.1.0",
+    "nice": "^0.7.1",
+    "select2": "^4.1.0-rc.0",
     "swiper": "^8.4.6"
   },
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.6.0",
     "@parcel/transformer-sass": "^2.6.0",
+    "@parcel/transformer-webmanifest": "^2.6.0",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
