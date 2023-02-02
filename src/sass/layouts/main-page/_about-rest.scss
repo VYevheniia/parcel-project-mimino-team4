@@ -174,3 +174,9 @@
     overflow: hidden;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .img-container--transform {
+    transform: translateY(-43px);
+  }
+}

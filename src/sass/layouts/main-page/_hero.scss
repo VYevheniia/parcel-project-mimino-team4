@@ -1,14 +1,17 @@
 .hero__section {
-  padding: 181px 0 102px 0;
+  padding-top: 188px;
   text-align: center;
 
-  @include tablet {
-    padding: 188px 0 64px 0;
-  }
-  @include desktop {
-    padding: 164px 0 65px 0;
-  }
+  // @include tablet {
+  //   padding: 188px 0 64px 0;
+  // }
+  // @include desktop {
+  //   padding: 164px 0 65px 0;
+  // }
 }
+// .hero__container {
+//   position: relative;
+// }
 
 .overlay {
   width: 100%;
@@ -121,8 +124,8 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 1.25;
   letter-spacing: 0.02em;
 
   color: #ffffff;
@@ -177,7 +180,9 @@
 }
 
 .hero__button-table {
-  margin: 0 0 24px 0;
+  @media screen and (max-width: 1023px) {
+    margin: 0 0 24px 0;
+  }
 
   padding: 18px auto;
   width: 236px;
@@ -247,22 +252,21 @@
 }
 
 .hero__address {
-  position: absolute;
-  right: 15px;
-  top: 64px;
   display: flex;
+
   align-items: center;
-  width: 210px;
+  width: 212px;
+  min-height: 47px;
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
+
+  @media screen and (max-width: 1023px) {
+    position: absolute;
+    top: -110px;
+    right: 18px;
+  }
 }
 
-.location__icon {
-  padding: 8px;
-  width: 20px;
-  height: 20px;
-  fill: rgba(243, 198, 83, 0.7);
-}
 .town__text {
   font-family: 'Montserrat';
   font-style: normal;
@@ -273,6 +277,11 @@
 
   color: #e5e5e5;
 }
+
+.hero__address-link {
+  display: flex;
+  align-items: center;
+}
 @media screen and (max-width: 1023px) {
   .hero-buttons--centered {
     display: flex;
@@ -281,5 +290,49 @@
   }
 }
 .hero__location-icon {
+  margin-left: 11px;
   fill: #f3c653;
+  width: 20px;
+  height: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .hero__type {
+    font-size: 20px;
+  }
+
+  .hero__titel {
+    font-size: 128px;
+  }
+
+  .hero__button-table {
+    margin-bottom: 32px;
+  }
+  .hero__location-icon {
+    margin-left: 16px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__address {
+    height: 56px;
+    position: absolute;
+    bottom: 80px;
+    left: 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__social {
+    display: none;
+  }
+  .hero__address {
+    bottom: 50px;
+    min-width: 285px;
+    padding: 8px 8px 8px 16px;
+  }
+  .town__text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
