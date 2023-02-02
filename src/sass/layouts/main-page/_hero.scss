@@ -236,7 +236,7 @@
 .hero__social {
   display: flex;
   gap: 23px;
-  justify-content: center;
+  justify-content: start;
   border: none;
   padding: 0;
 }
@@ -272,4 +272,14 @@
   letter-spacing: 0.01em;
 
   color: #e5e5e5;
+}
+@media screen and (max-width: 1023px) {
+  .hero-buttons--centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.hero__location-icon {
+  fill: #f3c653;
 }
