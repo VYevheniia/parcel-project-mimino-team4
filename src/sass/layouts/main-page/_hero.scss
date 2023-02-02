@@ -1,4 +1,4 @@
-.hero__section {
+.hero {
   padding: 181px 0 102px 0;
   text-align: center;
 
@@ -80,18 +80,14 @@
 }
 
 .hero__container {
-  // min-width: 320px;
-  // padding: 0 15px;
-  // margin-left: auto;
-  // margin-right: auto;
-
   position: relative;
 }
 
-.hero__titel {
+.hero__title {
   width: 303px;
   margin: 0 auto;
   margin-bottom: 24px;
+
   font-family: 'Film P3';
   font-style: normal;
   font-weight: 700;
@@ -113,16 +109,29 @@
   }
 }
 
-.hero__type {
+.hero__title-restaurant {
+  margin-bottom: 20px;
+  @include tablet {
+    margin-bottom: 16px;
+  }
+  @include desktop {
+    margin-bottom: 32px;
+  }
+}
+
+.hero__title-hotel {
+  margin-bottom: 32px;
+}
+
+.hero__subtitle {
   width: 294px;
   margin: 0 auto;
   margin-bottom: 40px;
-  text-align: center;
-  font-family: 'Montserrat';
-  font-style: normal;
+
+  font-family: 'Montserrat', 'sans-serif';
   font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 1.25;
   letter-spacing: 0.02em;
 
   color: #ffffff;
@@ -130,32 +139,55 @@
   @include tablet {
     width: 368px;
     margin-bottom: 56px;
+    font-size: 20px;
+    line-height: 1.2;
   }
   @include desktop {
     margin-bottom: 64px;
   }
 }
 
-.hero__slogan {
+.hero__subtitle-restaurant {
+  margin-bottom: 44px;
+  @include tablet {
+    margin-bottom: 56px;
+  }
+  @include desktop {
+    margin-bottom: 64px;
+  }
+}
+
+.hero__subtitle-hotel {
+  margin-bottom: 178px;
+
+  @include tablet {
+    margin-bottom: 226px;
+  }
+  @include desktop {
+    margin-bottom: 249px;
+  }
+}
+
+.hero__text {
   margin: 0 auto;
   margin-bottom: 113px;
-  text-align: center;
-  font-family: 'Montserrat';
-  font-style: normal;
+
+  font-family: 'FilmP3';
   font-weight: 700;
   font-size: 32px;
   line-height: 1.16;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
 
-  color: #fdfbec;
+  color: #ffffff;
+
+  text-transform: uppercase;
 
   @include tablet {
     margin-bottom: 145px;
-    font-weight: 700;
+
     font-size: 36px;
     line-height: 1.14;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -173,6 +205,99 @@
     display: flex;
     justify-content: flex-end;
     gap: 40px;
+  }
+}
+
+.hero__address {
+  position: absolute;
+  bottom: 527px;
+  right: 15px;
+
+  display: flex;
+  align-items: center;
+
+  width: 210px;
+  height: 47px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+
+  @include tablet {
+    top: 412px;
+    left: 47px;
+
+    width: 285px;
+    height: 56px;
+  }
+  @include desktop {
+    top: 436px;
+    left: 85px;
+  }
+}
+
+.hero__address-link {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #e5e5e5;
+
+  @include tablet {
+    font-size: 16px;
+  }
+}
+
+.hero__address-icon-mobile {
+  margin-left: 6px;
+  margin-right: 10px;
+  fill: #f3c653;
+  @include tablet {
+    display: none;
+  }
+}
+
+.hero__address-icon-tablet {
+  margin-left: 6px;
+  margin-right: 10px;
+  fill: #f3c653;
+  @media screen and (min-width: 320px) and (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.hero__soc-wrap {
+  position: absolute;
+  top: 515px;
+
+  @include tablet {
+    top: 493px;
+    left: 47px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.hero__soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 112px;
+  height: 24px;
+}
+
+.hero__soc-icon {
+  fill: rgba(243, 198, 83, 0.7);
+  transform: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: #f3c653;
   }
 }
 
@@ -218,58 +343,4 @@
   transition-property: background-color, border-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero__social-wrap {
-  position: absolute;
-  top: 515px;
-
-  @include tablet {
-    top: 493px;
-    left: 47px;
-  }
-  @include desktop {
-    display: none;
-  }
-}
-
-.hero__social {
-  display: flex;
-  gap: 23px;
-  justify-content: center;
-  border: none;
-  padding: 0;
-}
-.social__icon {
-  width: 24px;
-  height: 24px;
-  fill: rgba(243, 198, 83, 0.7);
-}
-
-.hero__address {
-  position: absolute;
-  right: 15px;
-  top: 64px;
-  display: flex;
-  align-items: center;
-  width: 210px;
-  border: 1px solid rgba(243, 198, 83, 0.7);
-  border-radius: 2px;
-}
-
-.location__icon {
-  padding: 8px;
-  width: 20px;
-  height: 20px;
-  fill: rgba(243, 198, 83, 0.7);
-}
-.town__text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.25;
-  letter-spacing: 0.01em;
-
-  color: #e5e5e5;
 }
