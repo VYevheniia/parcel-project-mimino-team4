@@ -4,15 +4,23 @@ table {
   border-spacing: 0;
   font-family: 'Montserrat';
   font-style: normal;
+  padding: 0;
 }
 
-th {
-  background-color: transparent;
-}
+// th {
+//   background-color: transparent;
+// }
 
 .restaurant-menu {
   padding: 32px 0;
   background-color: $lemon;
+  @media (min-width: $tablet) {
+    background-color: $dark-lemon;
+    padding: 58px 0 40px;
+  }
+  @media (min-width: $desktop) {   
+    padding: 58px 0 60px;
+  }
   &__title {
     margin-bottom: 32px;
     font-family: 'Times New Roman';
@@ -23,21 +31,11 @@ th {
   }
 
   &__set {
-
+    
       @media (min-width: $tablet) {
         display: flex;
         flex-wrap: wrap;
         gap: 0 140px;
-      }
-  }
-
-  &__item {
-    margin-bottom: 16px;
-    &:last-child {
-      margin-bottom: 0;
-    }
-      @media (min-width: $tablet) {
-        @include flexbasis(2, 140px);
       }
   }
 
@@ -49,13 +47,56 @@ th {
     font-size: 20px;
     line-height: 23px;
     color: #000000;
+    text-align: left;
   }
 }
+.column{
+     @media screen and (max-width:( $tablet - 1)){
+      margin-bottom: 16px;
+    }
 
-.dish__title {
-  // some code
+  @media (min-width: $tablet) {
+        @include flexbasis(2, 140px);
+      }
+   
+  // &__list{
+    // display: flex;
+    // flex-wrap: wrap;
+    // gap: 16px;
+  // }
+
+  &__set {
+      @media (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 140px;
+      }
+  }
+  &__item {    
+    &:not(:last-child) {
+       @media screen and (max-width:( $tablet - 1)){
+        margin-bottom: 16px;
+      }
+    }
+      width:100%;
+    
+  }
+}
+.dish{
+  //  @include mobile {
+  //     width: $mobile;
+  //   }
+  //   @include tablet {
+  //     width: $tablet;
+  //   }
+  //   @include desktop {
+  //     width: $desktop;
+  //   }
+  width: 100%;
+  &__title {
+  
   display: inline-block;
-  margin-bottom: 4px;
+  padding-bottom: 4px;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(17 / 14);
@@ -64,60 +105,58 @@ th {
 
 }
 
-.dish__ingredients {
-  // some code
-  display: inline-block;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: calc(12 / 10);
-  letter-spacing: 0.02em;
+  &__ingredients {
+    
+    width: 225px;
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: calc(12 / 10);
+    letter-spacing: 0.02em;
 
-  color: #000000;
+    color: #000000;
+
+  }
+
+  &__weight {
+    
+    width: 80px; 
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    text-align: start;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+  &__price { 
+
+    width: 80px; 
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    text-align: end;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+
+    /* Black */
+
+    color: #000000;
+  }
 
 }
 
-.dish__weight {
-  // some code
-width: 80px; 
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: calc(17 / 14);
-  text-align: end;
-  /* identical to box height */
-
-  letter-spacing: 0.02em;
-
-  /* Black */
-
-  color: #000000;
-}
-.dish__price {
-  // some code
-
-  width: 80px; 
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(17 / 14);
-  text-align: end;
-  /* identical to box height */
-
-  letter-spacing: 0.02em;
-
-  /* Black */
-
-  color: #000000;
-}
 .booking-table-button{
   @extend .button;
   @extend .button__black;
   @media screen and (max-width:( $tablet - 1)){
-    margin-right: auto;
+    margin: 16px auto 0;
     }
   margin-left: auto;
 }
