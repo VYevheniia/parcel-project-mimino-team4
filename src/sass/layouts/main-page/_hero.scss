@@ -1,18 +1,8 @@
-.hero__section {
+.hero {
   padding-top: 188px;
+  padding-bottom: 20px;
   text-align: center;
-
-  // @include tablet {
-  //   padding: 188px 0 64px 0;
-  // }
-  // @include desktop {
-  //   padding: 164px 0 65px 0;
-  // }
 }
-// .hero__container {
-//   position: relative;
-// }
-
 .overlay {
   width: 100%;
   margin-left: auto;
@@ -83,18 +73,14 @@
 }
 
 .hero__container {
-  // min-width: 320px;
-  // padding: 0 15px;
-  // margin-left: auto;
-  // margin-right: auto;
-
   position: relative;
 }
 
-.hero__titel {
-  width: 303px;
+.hero__title {
   margin: 0 auto;
   margin-bottom: 24px;
+
+  width: 303px;
   font-family: 'Film P3';
   font-style: normal;
   font-weight: 700;
@@ -116,10 +102,11 @@
   }
 }
 
-.hero__type {
-  width: 294px;
+.hero__subtitle {
   margin: 0 auto;
   margin-bottom: 40px;
+
+  width: 294px;
   text-align: center;
   font-family: 'Montserrat';
   font-style: normal;
@@ -142,8 +129,9 @@
 .hero__slogan {
   margin: 0 auto;
   margin-bottom: 113px;
+
   text-align: center;
-  font-family: 'Montserrat';
+  font-family: 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -204,7 +192,9 @@
 }
 
 .hero__button-room {
-  margin: 0 0 58px 0;
+  @media screen and (max-width: 1023px) {
+    margin: 0 0 58px 0;
+  }
 
   padding: 18px auto;
   width: 236px;
@@ -267,7 +257,10 @@
   }
 }
 
-.town__text {
+.hero__address-link {
+  display: flex;
+  align-items: center;
+
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -278,10 +271,6 @@
   color: #e5e5e5;
 }
 
-.hero__address-link {
-  display: flex;
-  align-items: center;
-}
 @media screen and (max-width: 1023px) {
   .hero-buttons--centered {
     display: flex;
@@ -296,43 +285,44 @@
   height: 20px;
 }
 @media screen and (min-width: 1024px) {
-  .hero__type {
+  .hero__subtitle {
     font-size: 20px;
   }
 
-  .hero__titel {
+  .hero__title {
     font-size: 128px;
   }
 
-  .hero__button-table {
-    margin-bottom: 32px;
-  }
   .hero__location-icon {
     margin-left: 16px;
     width: 24px;
     height: 24px;
   }
-}
-
-@media screen and (min-width: 1024px) {
+  .hero__button-wrap {
+    margin-bottom: 15px;
+  }
   .hero__address {
     height: 56px;
     position: absolute;
-    bottom: 80px;
+    bottom: 42px;
     left: 47px;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .hero__social {
     display: none;
   }
   .hero__address {
-    bottom: 50px;
+    bottom: -1px;
     min-width: 285px;
     padding: 8px 8px 8px 16px;
   }
-  .town__text {
+  .hero__address-link {
     font-size: 16px;
     line-height: 1.25;
+  }
+  .hero__button-wrap {
+    margin-bottom: 55px;
   }
 }
