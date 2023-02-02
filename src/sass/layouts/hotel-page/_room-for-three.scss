@@ -1,14 +1,20 @@
+
+
 .room-for-three{
    background-color: $dark-lemon ;
-   
-   
-   @media (max-width: 1023px){
-    padding: 32px 15px;
-    overflow: hidden;
+   padding-top: 32px;
+   padding-bottom:32px;
+
+
+   @media(min-width:1024px){
+   padding-top: 62px;
+   padding-bottom:40px;
+   position: relative;
+  
    }
-   @include tablet {
-    padding-bottom: 104px;
-  }
+   @media(min-width:1280px){
+       padding-top: 62px;
+       padding-bottom: 40px;}
 }
 
 .room-for-three__information-img{
@@ -194,5 +200,3 @@ width: 242px;
   margin-top: 40px;
 }
 }
-
-
