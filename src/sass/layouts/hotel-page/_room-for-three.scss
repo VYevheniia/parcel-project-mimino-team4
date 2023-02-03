@@ -1,205 +1,205 @@
-.room-for-three-bgcolor{
-  background-color: $dark-lemon ;
-}
+.room-for-three {
+  background-color: $dark-lemon;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-.room-for-three{
-   
-   
-   
-   @media (max-width: 1023px){
-    padding: 32px 0px;
-    overflow: hidden;
-   }
-   @include tablet {
-    padding-bottom: 104px;
-    
-    padding-top: 66px;
-   
+  @media (min-width: 1024px) {
+    padding-top: 62px;
+    padding-bottom: 40px;
+    position: relative;
+  }
+  @media (min-width: 1280px) {
+    padding-top: 62px;
+    padding-bottom: 40px;
   }
 }
 
-.room-for-three__information-img{
+.room-for-three__information-img {
   @include tablet {
     display: flex;
-    flex-direction:row-reverse;
+    flex-direction: row-reverse;
   }
-    
 }
 
-.room-for-three_tumb{
-  background: #DADADA;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
-  width: 244px;
-  
+
+.room-for-three_card {
+  margin-bottom: 32px;
+  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  display: block;
+  max-width: 100%;
+  margin-right: auto;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 0;
+    position: absolute;
+    right: 50%;
+    top: -32px;
+  }
+}
+
+.room-for-three__information {
+  @media (max-width: 1023px) {
+    margin-bottom: 32px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
   @include tablet {
-     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-     border-radius: 0px;
-      width: 400px;
-      margin-top: -99px;
+    margin-left: 45px;
+    margin-right: 17px;
+    margin-bottom: 0;
   }
 
   @include desktop {
-    border-radius: 2px;
-    width: 460px;
+    margin-right: 57px;
   }
 }
 
-.room-for-three__information{
-@media (max-width: 1023px){
-    margin-bottom: 32px;
-}
- 
- display: flex;
- flex-direction: column;
- align-items: flex-end;
+.text-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 
- @include tablet {
-  margin-left: 45px;
-  margin-right: 17px;
 }
 
-@include desktop {
-  margin-right: 57px;
-}
-}
+.room-for-three_text {
+  color: $gray-first;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
 
-.text-logo{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
+  display: flex;
+  justify-content: flex-end;
 
-.room-for-three_text{
-color:$gray-first;
-font-family: 'Times New Roman';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 1.5;
-
-display:flex;
-justify-content: flex-end;
-
-@include tablet {
+  @include tablet {
     margin-bottom: 4px;
     font-size: 32px;
     line-height: 1.1;
   }
 }
 
-.room-for-three__logo{
-color:$color-text-logo ;
-font-family: 'Film P3';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 1.0;
-letter-spacing: 0.3em;
+.room-for-three__logo {
+  color: $color-text-logo;
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 0.3em;
 
-display:flex;
-justify-content: flex-end;
-margin-bottom: 32px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 32px;
 
-@include tablet {
+  @include tablet {
     font-size: 64px;
-    margin-bottom: 62px;
+    margin-bottom: 32px;
   }
 }
-.logo--letter-spacing{
-letter-spacing: normal;
+.logo--letter-spacing {
+  letter-spacing: normal;
 }
 
+.room-for-three__title {
+  color: $black;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-size: 24px;
+  line-height: 1.1;
 
+  margin-bottom: 12px;
 
-.room-for-three__title{
-color: $black;
-font-family: 'Times New Roman';
-font-style: normal;
-font-weight: 700;
-letter-spacing: 0.05em;
-font-size: 24px;
-line-height: 1.1;
-
-margin-bottom: 12px;
-
-@include tablet {
+  @include tablet {
     font-size: 30px;
     margin-bottom: 16px;
   }
 }
 
-.room-for-three__description{
-color: $color-text-gray;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-width: 242px;
+.room-for-three__description {
+  color: $color-text-gray;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  width: 242px;
 
-@include tablet {
+  @include tablet {
     font-size: 16px;
     width: 400px;
-}
+  }
 }
 
-.room-for-three__footer{
+.room-for-three__footer {
   margin-top: 32px;
   @include tablet {
-    margin-top: 48px;
+    margin-top: 0;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-}
+  }
 }
 
-.room-for-three__button{
-  @media (max-width: 1023px){
+.room-for-three__button {
+  @media (max-width: 1023px) {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-   }
-   
-   @include tablet {
-   display: flex;
-   flex-direction: column;
-}
-}
-
-.button-details{
-    text-decoration: none;
-    text-align: center;
-    padding-top: 14px;
-   }
-
-   .button-price{
-    margin-top: 16px;
-    display: inline;
-}
-
-.room-for-three__slider{
-  @media (max-width: 1023px){
-    margin-left: 130px;
-   }
   }
 
-.room-for-three__swiper-btns{
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.button-details {
+  text-decoration: none;
+  text-align: center;
+  padding-top: 14px;
+}
+
+.button-price {
+  margin-top: 16px;
+  display: inline;
+}
+
+.room-for-three__slider {
+  @media (max-width: 1023px) {
+    margin-left: 130px;
+  }
+}
+
+.room-for-three__swiper-btns {
   margin-right: 125px;
   margin-top: 20px;
 
- @include tablet {
-  margin-right: 336px;
-  margin-top: 32px;
+  @include tablet {
+    margin-right: 336px;
+    margin-top: 32px;
+  }
+
+  @include desktop {
+    margin-right: 456px;
+    margin-top: 40px;
+  }
 }
 
-@include desktop {
-  margin-right: 456px;
-  margin-top: 40px;
-}
+.container--room-for-three {
+  overflow: hidden;
 }
 
-
+.title-description {
+  @media screen and (min-width = 1024px) {
+    margin-bottom: 176px;
+  }
+}
