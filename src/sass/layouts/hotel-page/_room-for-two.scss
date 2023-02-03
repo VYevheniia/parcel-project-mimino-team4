@@ -1,0 +1,168 @@
+.room-for-two {
+  background-color: $lemon;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @media (min-width: 1024px) {
+    padding-top: 62px;
+    padding-bottom: 40px;
+    position: relative;
+  }
+  @media (min-width: 1280px) {
+    padding-top: 62px;
+    padding-bottom: 40px;
+  }
+
+  &__desc {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: $gray-first;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    @media (min-width: 1024px) {
+      margin-bottom: 4px;
+      font-size: 32px;
+    }
+  }
+
+  &__title {
+    font-family: 'Times New Roman', sans-serif;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    color: $black;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.05;
+    text-transform: uppercase;
+
+    @media (min-width: 1024px) {
+      margin-top: 62px;
+      margin-bottom: 16px;
+      font-size: 30px;
+      line-height: 1.13;
+    }
+
+    @media (min-width: 1280px) {
+      margin-top: 72px;
+      margin-bottom: 24px;
+      font-size: 36px;
+      line-height: 1.14;
+    }
+  }
+
+  &__title-text {
+    text-transform: lowercase;
+  }
+
+  &__text {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 32px;
+    color: $color-text-gray;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02;
+    display: block;
+    text-align: left;
+    max-width: 258px;
+
+    @media (min-width: 1024px) {
+      max-width: 400px;
+
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+
+  &__logo {
+    color: $color-text-logo;
+    font-family: 'Film P3', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.075;
+    letter-spacing: 0.3em;
+    text-decoration: none;
+
+    @media (min-width: 1024px) {
+      font-size: 64px;
+    }
+  }
+
+  &__card {
+    margin-bottom: 32px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+
+    @media (min-width: 1024px) {
+      margin-bottom: 0;
+      position: absolute;
+      left: 50%;
+      top: -32px;
+    }
+  }
+
+  &__button {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px 37px;
+    background-color: $black;
+  }
+
+  &__link {
+    @media (max-width: 1023px) {
+      margin-top: 20px;
+    }
+
+    max-width: 235px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 14px 64px;
+    border: 2px solid $white;
+    text-decoration: none;
+    background-color: $black;
+  }
+
+  &__slider-button {
+    @media screen and (min-width = 1024px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    &__swiper-btns {
+      justify-content: center;
+    }
+
+    &__slider-container {
+      margin-left: -120px;
+    }
+  }
+}
+.container--luxe-room {
+  overflow: hidden;
+}
+.container--room-for-two {
+  overflow: hidden;
+}
+
+.room-for-two__block {
+  @media screen and (min-width = 1024px) {
+    margin-bottom: 176px;
+  }
+}
+.room-for-two__swiper-btns {
+  @media screen and (max-width = 1023px) {
+    margin-right: 154px;
+  }
+  @media screen and (min-width = 1024px) {
+    margin-right: -24px;
+  }
+}

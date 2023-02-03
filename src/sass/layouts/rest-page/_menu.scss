@@ -1,0 +1,220 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+}
+
+th,
+td {
+  padding: 0;
+  background-color: transparent;
+}
+
+.restaurant-menu {
+  padding: 32px 0;
+  background-color: $lemon;
+  color: $black;
+  @include tablet {
+    background-color: $dark-lemon;
+    padding: 58px 0 40px;
+  }
+  @include tablet {
+    background-color: $dark-lemon;
+    padding: 58px 0 40px;
+  }
+
+  @include desktop {
+    padding: 58px 0 60px;
+  }
+  &__title {
+    margin-bottom: 32px;
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(37 / 32);
+
+    @include tablet {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__set {
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 140px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+
+    text-align: left;
+
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+}
+.column {
+  @media screen and (max-width: ( $tablet - 0.02)) {
+    margin-bottom: 16px;
+  }
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
+  @include desktop {
+    @include flexbasis(2, 140px);
+  }
+
+  &:first-child {
+    @media (min-width: $tablet) and (max-width: ( $desktop - 0.02 )) {
+      // ліва колонка менша на 20рх від правої тільки на tablet
+      flex-basis: calc(((100% - 88px) / 2) - 10px);
+    }
+  }
+  &:last-child {
+    @media (min-width: $tablet) and (max-width: ( $desktop - 0.02 )) {
+      // права колонка ширша на 20рх від лівої тільки на tablet
+      flex-basis: calc(((100% - 88px) / 2) + 10px);
+    }
+    @include desktop {
+      @include flexbasis(2, 140px);
+    }
+  }
+
+  &__list {
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
+
+  &__set {
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  &__item {
+    &:not(:last-child) {
+      @media screen and (max-width: ( $tablet - 0.02)) {
+        margin-bottom: 16px;
+      }
+    }
+    width: 100%;
+  }
+}
+
+.dish {
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__row--lonely:not(:last-child) {
+    padding-bottom: 8px;
+  }
+
+  &__row--bottom:not(:last-child) {
+    padding-bottom: 8px;
+    @include desktop {
+      padding-bottom: 12px;
+    }
+  }
+
+  &__title,
+  &__title--one-row {
+    max-width: 226px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    letter-spacing: 0.02em;
+    flex-grow: 1;
+
+    @include desktop {
+      max-width: 291px;
+      font-size: 16px;
+      line-height: calc(20 / 16);
+    }
+  }
+  &__title {
+    padding-bottom: 4px;
+  }
+
+  &__ingredients {
+    max-width: 226px;
+    display: block;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: calc(12 / 10);
+    letter-spacing: 0.02em;
+
+    @include desktop {
+      min-width: 291px;
+    }
+  }
+
+  &__weight {
+    min-width: 50px;
+    padding-right: 5px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    text-align: end;
+    letter-spacing: 0.02em;
+    @include mobile {
+      width: 80px;
+      padding-right: 12px;
+    }
+
+    @include desktop {
+      width: 97px;
+    }
+  }
+  &__price {
+    min-width: 65px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    text-align: end;
+
+    letter-spacing: 0.02em;
+    @include mobile {
+      width: 80px;
+    }
+
+    @include desktop {
+      width: 97px;
+      font-size: 16px;
+      line-height: calc(20 / 16);
+    }
+  }
+}
+
+.booking-table-button {
+  @extend .button;
+  @extend .button__black;
+  @media screen and (max-width: ( $tablet - 0.02)) {
+    margin: 16px auto 0;
+  }
+  margin-left: auto;
+  @include tablet {
+    margin-top: 40px;
+  }
+  @include desktop {
+    margin-top: 32px;
+  }
+}

@@ -1,0 +1,91 @@
+.overlay-restaurant {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (max-width: 1024px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/hero/hero_restaurant_phone.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 1024px),
+    (min-resolution: 192dpi) and (max-width: 1024px),
+    (min-resolution: 2dppx) and (max-width: 1024px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/hero/hero_restaurant_phone_2x.jpg);
+  }
+
+  @media screen and (min-width: 1024px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/hero/hero_restaurant_tablet.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
+    (min-resolution: 192dpi) and (min-width: 1024px),
+    (min-resolution: 2dppx) and (min-width: 1024px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/hero/hero_restaurant_tablet_2x.jpg);
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/hero/hero_restaurant_desctop.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    (min-resolution: 192dpi) and (min-width: 1280px),
+    (min-resolution: 2dppx) and (min-width: 1280px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/hero/hero_restaurant_desctop_2x.jpg);
+  }
+}
+.hero__button-rest {
+  @media screen and (max-width: 1023px) {
+    margin: 0 0 58px 0;
+  }
+
+  padding: 18px auto;
+  width: 236px;
+  height: 48px;
+  color: #f3c653;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+
+  transition-property: background-color, border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

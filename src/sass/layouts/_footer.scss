@@ -1,28 +1,31 @@
 .footer {
   background-color: $color-footer;
-  padding: 40px 33px 40px 59px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+  padding: 80px 0;
 
   @include tablet {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    padding: 80px 0 80px 154px;
+    padding: 80px 0;
   }
   @include desktop {
-    padding: 80px 0 80px 216px;
+    padding: 80px 0;
   }
 
   &__nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 80px;
+    // gap: 80px;
 
     @include tablet {
-      gap: 183px;
+      // gap: 183px;
     }
 
     @include desktop {
-      gap: 231px;
+      // gap: 231px;
     }
   }
 
@@ -35,11 +38,16 @@
     letter-spacing: 0.3em;
     color: $accent-yellow;
     margin-top: 60px;
+    margin-right: 85px;
 
     @include tablet {
       font-size: 64px;
       line-height: 1.07;
       margin-top: 40px;
+      margin-right: 163px;
+    }
+    @include desktop {
+      margin-right: 231px;
     }
   }
   &__list {
@@ -61,17 +69,17 @@
     display: flex;
     gap: 23px;
     margin-top: 33px;
-    margin-left: 214px;
+    margin-left: 220px;
     flex-direction: row-reverse;
 
     @include tablet {
-      margin-left: 137px;
+      margin-left: 0px;
       margin-top: 0;
       flex-direction: column;
       gap: 12px;
     }
     @include desktop {
-      margin-left: 199px;
+      margin-left: 0px;
     }
   }
 
@@ -103,5 +111,18 @@
       letter-spacing: 0.02em;
       color: $accent-yellow;
     }
+  }
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 340px;
+  margin: 0 auto;
+  @include tablet {
+    width: 746px;
+  }
+  @include desktop {
+    width: 876px;
   }
 }
