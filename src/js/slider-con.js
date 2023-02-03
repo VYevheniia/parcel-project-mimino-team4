@@ -74,7 +74,7 @@ function swiperSlider() {
         // адаптив
         breakpoints: {
           // when window width is >= 320px
-          414: {
+          320: {
             slidesPerView: 2,
             spaceBetween: 16,
           },
@@ -152,7 +152,7 @@ function swiperSlider() {
         // адаптив
         breakpoints: {
           // when window width is >= 320px
-          414: {
+          320: {
             slidesPerView: 2,
             spaceBetween: 24,
           },
@@ -230,7 +230,7 @@ function swiperSlider() {
         // адаптив
         breakpoints: {
           // when window width is >= 320px
-          414: {
+          320: {
             slidesPerView: 2,
             spaceBetween: 20,
           },
@@ -308,7 +308,7 @@ function swiperSlider() {
         // адаптив
         breakpoints: {
           // when window width is >= 320px
-          414: {
+          320: {
             slidesPerView: 3,
             spaceBetween: 20,
           },
@@ -387,7 +387,7 @@ function swiperSlider() {
         // адаптив
         breakpoints: {
           // when window width is >= 320px
-          414: {
+          320: {
             slidesPerView: 3,
             spaceBetween: 20,
           },
@@ -457,7 +457,7 @@ function swiperSlider() {
         },
         breakpoints: {
           // when window width is >= 320px
-          414: {
+          320: {
             slidesPerView: 1,
             spaceBetween: 40,
           },
