@@ -14,7 +14,6 @@ body.lock{
     top: 0;
     left: 0;
     opacity: 0;
-    visibility: hidden;
     overflow-y: auto;
     overflow-x: hidden;
     transition: all 0.8s ease 0s;
@@ -112,6 +111,7 @@ body.lock{
         height: 24px;
         border-color: transparent;
         background-color: #fffdee;
+        cursor: pointer;
     } 
     &__cross{
       max-width: 24px;
