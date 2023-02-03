@@ -261,7 +261,7 @@ function swiperSlider() {
 
       let swiper = new Swiper(slider.querySelector('.swiper'), {
         speed: 1500,
-        // loop: true,
+        loop: true,
         // автоплей
         //centeredSlides: true,
         // autoplay: {
@@ -319,7 +319,7 @@ function swiperSlider() {
           },
           // when window width is >= 1200px
           1280: {
-            slidesPerView: 3,
+            slidesPerView: 'auto',
             spaceBetween: 86,
           },
         },
@@ -339,7 +339,7 @@ function swiperSlider() {
 
       let swiper = new Swiper(slider.querySelector('.swiper'), {
         speed: 1500,
-        // loop: true,
+        loop: true,
         // автоплей
         //centeredSlides: true,
         // autoplay: {
@@ -398,7 +398,7 @@ function swiperSlider() {
           },
           // when window width is >= 1200px
           1280: {
-            slidesPerView: 3,
+            slidesPerView: 'auto',
             spaceBetween: 86,
           },
         },
