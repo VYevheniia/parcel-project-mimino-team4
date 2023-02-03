@@ -21,7 +21,7 @@
   background-size: cover;
 
   @media screen and (min-width: $tablet) {
-    height: 620px;
+    min-height: 620px;
     min-width: 1024px;
     background-image: linear-gradient(
         to right,
