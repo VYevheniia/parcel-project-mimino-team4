@@ -8,6 +8,8 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+
+  background-color: #fffdee;
 }
 
 .details-rest {
@@ -153,7 +155,8 @@
     }
 
     @media screen and (min-width: $desktop) {
-      margin-left: 85px;
+      margin-left: 67px;
+      margin-bottom: 48px;
     }
   }
 
