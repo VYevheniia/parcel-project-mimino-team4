@@ -255,6 +255,10 @@
     top: -110px;
     right: 18px;
   }
+
+  @media screen and (max-width: 400px) {
+    top: -90px;
+  }
 }
 
 .hero__address-link {
