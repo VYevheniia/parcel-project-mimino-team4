@@ -138,7 +138,7 @@
 .room-for-three__footer {
   margin-top: 32px;
   @include tablet {
-    margin-top: 0;
+    margin-top: 48px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
