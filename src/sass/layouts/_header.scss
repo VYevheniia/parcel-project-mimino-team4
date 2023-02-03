@@ -15,6 +15,7 @@
     width: 100%;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding-top: 24px !important;
@@ -236,7 +237,7 @@
 .hero__button-s {
   display: block;
   color: #f3c653;
-  padding: 14px 34px;
+  padding: 14px 21px;
   font-family: Montserrat;
   font-weight: 700;
   font-size: 16px;
@@ -246,10 +247,11 @@
   border-radius: 25px;
   cursor: pointer;
   text-decoration: none;
-  margin-bottom: 30px;
+  margin-bottom: 6px;
   position: absolute;
   left: 109px;
   bottom: 15px;
+
   @include tablet {
     left: 740px;
     @include desktop {
@@ -284,9 +286,14 @@
   align-items: center;
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
-  margin-left: 125px;
+
   position: absolute;
-  top: 72px;
+  top: 100px;
+
+  @include mobile {
+    top: 72px;
+    margin-left: 80px;
+  }
 
   @include tablet {
     display: none;

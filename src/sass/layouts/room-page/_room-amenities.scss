@@ -89,7 +89,7 @@
       max-width: 384px;
     }
     &__button-reservation {
-      width: 386px;
+      width: 100%;
     }
   }
   @include tablet {
@@ -120,7 +120,7 @@
       margin-top: 40px;
       margin-bottom: 32px;
 
-      font-size: 24px;
+      font-size: 18px;
     }
     &__link-back {
       font-size: 20px;
