@@ -10,8 +10,6 @@
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  padding-top: 24px;
-  padding-bottom: 12px;
 
   &__container {
     width: 100%;
@@ -19,6 +17,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 24px !important;
+    padding-bottom: 77px !important;
+
+    &-2room {
+      background: linear-gradient(
+        180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 54.17%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
   }
 
   &__nav {
@@ -114,10 +124,10 @@
   }
 
   &__socials {
-    display: none;
+    display: flex;
 
     @include desktop {
-      display: flex;
+      flex-direction: row;
       align-items: center;
       gap: 23px;
     }
@@ -146,17 +156,246 @@
     line-height: 1.075;
   }
 }
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+
+// .container-slider {
+//   max-width: 414px;
+//   margin: 0 auto;
+//   @include tablet {
+//     max-width: 1024px;
+//     margin: 0 auto;
+//   }
+
+//   @include desktop {
+//     max-width: 1280px;
+//     margin: 0 auto;
+//   }
+// }
+.header__background {
+  max-width: 414px;
+  margin: 0 auto;
+  @include tablet {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
+.heros {
+  position: absolute;
+  z-index: 20;
+  top: 465;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  @include tablet {
+    top: 468;
+  }
+  @include desktop {
+    top: 524;
+  }
+
+  &-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+  }
+}
+.hero__title-s {
+  color: white;
+  font-family: FilmP3 Bold;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  &-span {
+    font-size: 24px;
+  }
+}
+.hero__description {
+  width: 325px;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  @include tablet {
+    width: 400px;
+    font-size: 16px;
+    line-height: 1.125;
+  }
+}
+.hero__button-s {
+  display: block;
+  color: #f3c653;
+  padding: 14px 34px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 30px;
+  position: absolute;
+  left: 109px;
+  bottom: -15px;
+  @include tablet {
+    left: 740px;
+    bottom: 15px;
+    @include desktop {
+      left: 980px;
+    }
+  }
+}
+
+.locationr__icon {
+  width: 24px;
+  height: 24px;
+  fill: rgba(243, 198, 83, 0.7);
+  margin: 0 10px 0;
+}
+.heros__address-link {
+  display: none;
+
+  @include tablet {
+    display: flex;
+    width: 243px;
+    align-items: center;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+.hero__address-link2 {
+  display: flex;
+  width: 243px;
+  align-items: center;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  margin-left: 125px;
+  position: absolute;
+  top: 72px;
+
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+.heros__address2 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  color: #e5e5e5;
+  margin-left: 10px;
+  padding: 8px 0px;
+}
+.hero__address3 {
+  //   position: absolute;
+  //   top: 75px;
+  //   right: 50%;
+  //   transform: translateX(180px);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  color: #e5e5e5;
+  margin-left: 10px;
+  padding: 8px 3px;
+  //   border: 1px solid rgba(243, 198, 83, 0.7);
+  //   border-radius: 2px;
+  @include tablet {
+    display: none;
+  }
+}
+.hero__addressm {
+  position: absolute;
+  top: 100px;
+  right: 30%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #e5e5e5;
+  @include tablet {
+    display: none;
+  }
+}
+.header__socials2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @include tablet {
+    flex-direction: row;
+    align-items: center;
+    gap: 21px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+.header__socials-link2 {
+  display: flex;
+  flex-direction: column;
+  fill: $accent-yellow;
+}
+.heros__address-hide {
+  display: flex;
+  gap: 40px;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 16px;
+  @include tablet {
+    margin-top: 24px;
+  }
+}
+.hero-button2a {
+  color: #f3c653;
+  padding: 14px 34px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.header__social-mobile {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+.header .logotype {
+  margin-right: 0;
+  @include tablet {
+    margin-right: auto;
+  }
+  @include desktop {
+    margin-right: 0;
+  }
+}
