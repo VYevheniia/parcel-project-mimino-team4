@@ -47,7 +47,7 @@
 .button-reservation {
   display: block;
   padding: 18px auto;
-  width: 100%;
+  width: 434px;
   height: 64px;
   color: $white;
   cursor: pointer;
@@ -63,6 +63,10 @@
   transition-property: background-color, border-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 413px) {
+    width: 100%;
+  }
 
   &:hover,
   &:focus {
